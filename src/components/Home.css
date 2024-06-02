@@ -1,0 +1,33 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.slick-dots li button:before {
+    color:var(--Verde);
+}
+
+.slick-dots li.slick-active button:before {
+    color:var(--Verde);
+}
+
+.containerC {
+    display: flex;
+    color: var(--Blanco);
+}
+
+.Casa-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Plomo);
+    width: 375px;
+    height: 812px;
+}
+
+.Cabeza {
+    padding: 26px;
+    font-size: 25px;
+    p {
+        margin: 5px 0 20px;
+        strong {
+            color: var(--Verde);
+        }
+    }
+}

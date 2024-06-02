@@ -1,0 +1,31 @@
+.containerI {
+    display: flex;
+}
+
+.inf-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Plomo);
+    width: 375px;
+    height: 812px;
+}
+
+.inf-card h1 {
+    text-align: center;
+    margin-top: 50px; 
+    font-size: 45px;
+    color: var(--Blanco);
+}
+
+.inf-button {
+    background-color: var(--Verde);
+    color: var(--Negro);
+    padding: 25px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 18px;
+}
+

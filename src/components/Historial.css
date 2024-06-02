@@ -1,0 +1,74 @@
+.containerH {
+    color: var(--Blanco);
+    display: flex;
+}
+
+.his-header {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    font-size: 10px;
+}
+
+.arrow1 {
+    margin-left: auto;
+    font-size: 38px;
+    color: var(--Verde);
+    margin-right: 40px;
+}
+
+.arrow1:active {
+    color: var(--Blanco); 
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 23px;
+}
+
+.his-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Plomo);
+    max-width: 500px;
+    min-height: 400px;
+    width: 375px;
+    height: 812px;
+}
+
+.workout-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--Primary);
+    margin: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.workout-card img {
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.workout-card h2 {
+    margin: 0;
+}
+
+.workout-card p {
+    margin: 5px 0 0;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 38px;
+    color: var(--Verde);  
+}
+
+.arrow:active {
+    color: var(--Blanco); 
+}

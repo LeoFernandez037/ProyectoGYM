@@ -1,0 +1,68 @@
+.containerL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Plomo);
+    width: 375px;
+    height: 812px;
+}
+
+.ImagenLog {
+    background-image: url('../assets/ImaLog.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 14px;
+}
+
+.Logo{
+    width: 90px;
+    height: 90px;
+    margin-right: 1rem;
+}
+
+.Mensaje {
+    text-align:center;
+    margin-bottom: 20px;
+    color: var(--Verde);
+    line-height: 1.5;
+    font-size: 20px; 
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-form input {
+    margin: 10px;
+    padding: 10px;
+    width: 100%; 
+    max-width: 250px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-button {
+    background-color: var(--Verde);
+    color:var(--Negro);
+    padding: 16px;
+    width: 150px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

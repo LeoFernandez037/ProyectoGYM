@@ -1,0 +1,51 @@
+.home-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
+}
+
+.home-card {
+    background-color: var(--PlomoOscuro);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.Imagen {
+    background-image: url('../assets/Imagen1.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 0.5%; 
+    height: 160px; 
+}
+
+button {
+    margin: 15px 0; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Verde);
+    color: var(--Primary);
+    width: 100%;
+}
+button:hover {
+    background-color: var(--Blanco);
+    color: var(--Negro);
+}
+
+@media (max-width: 600px) {
+    .home-card {
+        padding: 10px;
+    }
+
+    .Imagen {
+        padding: 0.5%; 
+        height: 160px; /* Ajustar la altura */
+    }
+
+    button {
+        padding: 10px;
+    }
+}
