@@ -1,0 +1,23 @@
+#root{
+  text-align: center;
+  margin: 0 auto;
+}
+
+:root {
+  --Blanco:rgba(255, 255, 255, 1);
+  --Verde: rgba(208, 253, 62, 1);
+  --Negro: rgba(0, 0, 0, 1);
+  --Primary:rgb(27,27,27);
+  --PlomoOscuro: rgba(44, 44, 46, 1);
+  --Plomo:rgb(84,84,84);
+  
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--Negro);
+}
