@@ -12,7 +12,6 @@
     background-color: var(--Primary);
     
     padding-bottom: 60px;
-    /* Igual a la altura de BottomNav */
 }
 
 @media (prefers-reduced-motion: no-preference) {

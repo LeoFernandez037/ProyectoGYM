@@ -1,0 +1,72 @@
+.editar-perfi {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.per-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Plomo);
+    max-width: 500px;
+    min-height: 400px;
+    width: 375px;
+    height: 748px;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pi {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-pic-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin: 10px 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.save-button {
+    background-color: #c9ff00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}

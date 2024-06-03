@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BottomNav.css";
-import profileImage from "../assets/profile.jpg";
+import Imagen99 from "../assets/profile.jpg";
 import homeIcon from "../assets/Home.png";
 import statsIcon from "../assets/stads.png";
 import bellIcon from "../assets/bell.png";
@@ -26,8 +26,8 @@ class BottomNav extends React.Component {
           </Link>
           <span className="notification-dot"></span>
         </div>
-        <Link to="/perfil">
-          <img src={profileImage} alt="Profile" className="profile-pic" />
+        <Link to="/profile">
+          <img src={Imagen99} alt="Profile" className="profile" />
         </Link>
       </div>
     );
