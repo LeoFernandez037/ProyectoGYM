@@ -4,13 +4,14 @@
 }
 
 .profile-card {
-    background: rgb(51, 52, 51);
+    background: var(--Primary);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     width: 375px;
     height: 748px;
+    font-family: "Rajdhani", sans-serif;
 }
 
 .profile-header h1 {
@@ -55,10 +56,12 @@
 }
 
 .profile-name {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
     padding-left: 20px;
+    font-weight: 700;
+    font-size:40px;
 }
 
 .flecha{
@@ -94,15 +97,12 @@
 
 .membership-status {
     text-align: center; 
-    margin-top: 40px;
-}
-
-.membership-status a {
-    color: #24FF3A; 
-    text-decoration: none; 
+    margin-top: 30px;
 }
 
 .logout a {
+    padding-left:110px;
+    text-align: center;
     color: red;
     text-decoration: none; 
 }
