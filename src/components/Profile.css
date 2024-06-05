@@ -1,0 +1,108 @@
+.profile-container {
+    display: flex;
+    color: white;
+}
+
+.profile-card {
+    background: rgb(51, 52, 51);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 748px;
+}
+
+.profile-header h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info > * + * {
+    margin-left: 200px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: -200px;
+    margin-top: 5px;
+    border: 4px solid var(--Blanco);
+}
+
+.profile-details p {
+    margin: 4px ;
+    text-align: left;
+}
+
+.titulo{
+    color: #FFBB55;
+}
+
+.highlight {
+    color: #c4ff00;
+    font-weight: bold;
+}
+
+.profile-name {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.flecha{
+    margin-left: auto;
+    font-size: 30px;
+    color: var(--Verde); 
+    margin-left: 50px;
+}
+
+.flech:active {
+    color: var(--Blanco); 
+}
+
+.profile-nav ul {
+    list-style: none;
+    text-align: left;
+    font-size: 22px;
+    padding: 0;
+    margin: 25px;
+}
+
+.profile-nav ul li {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.profile-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.membership-status {
+    text-align: center; 
+    margin-top: 40px;
+}
+
+.membership-status a {
+    color: #24FF3A; 
+    text-decoration: none; 
+}
+
+.logout a {
+    color: red;
+    text-decoration: none; 
+}

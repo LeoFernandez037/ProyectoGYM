@@ -1,0 +1,62 @@
+.notifications {
+    color: white;
+    display: flex;
+}
+
+.not-card {
+    background: rgb(51, 52, 51);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 748px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.tab {
+    background-color: #606060;
+    color: white;
+    padding: 15px;
+}
+
+.tab.active {
+    background-color: #8dff03;
+    color: #121212;
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.notification .time {
+    font-size: 12px;
+    color: #888;
+}
+
+.notification h3 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.notification p {
+    font-size: 14px;
+    color: #ccc;
+}

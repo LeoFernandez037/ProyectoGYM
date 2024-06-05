@@ -1,0 +1,91 @@
+.editar-perfi {
+    color: var(--Blanco);
+    display: flex;
+}
+
+.per-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Plomo);
+    width: 375px;
+    height: 748px;
+}
+
+.edit-header {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.flech{
+    position: absolute; 
+    left: 20px; 
+    font-size: 40px;
+    color: var(--Verde);
+}
+
+.flech:active {
+    color: var(--Blanco); 
+}
+
+.tituloPer {
+    font-size: 30px;
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pi {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-pic-button {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 50px; 
+    height: 50px; 
+    background-color: #333;
+    border-radius: 50%; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin: 15px;
+    width: 260px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+    color: #bbb;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.save-button {
+    background-color: var(--Verde);
+    color: var(--Negro);
+    padding: 16px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

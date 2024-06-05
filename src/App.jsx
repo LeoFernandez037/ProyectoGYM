@@ -1,13 +1,25 @@
-import react, { useState } from "react";
-import BottomNav from "./components/BottomNav.jsx";
 import "./App.css";
+import Navegacion from './Router/Navegacion';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Inicio from './components/Inicio';
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
     <>
       <div className="appContainer">
-        <div className="componentsContainer"></div>
-        <BottomNav />
+        <div className="componentsContainer">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/ProyectoGYM/" element={<Inicio />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/*" element={<Navegacion />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
       </div>
     </>
   );
