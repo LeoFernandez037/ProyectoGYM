@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './EditarPerfil.css';
 import Imagen12 from "../assets/Foto.jpg";
 
@@ -16,7 +17,12 @@ function EditarPerfil() {
     return (
         <div className="editar-perfi">
             <div className="per-card">
-                <h1>Editar Perfil</h1>
+            <div className="edit-header">
+                    <Link to="/profile" >
+                        <span className="flech">⬅</span>
+                    </Link>
+                    <h1 className="tituloPer"> Editar Perfil</h1>
+                </div>
                 <div className="profile-pic-container">
                     <img className="profile-pi" src={Imagen12} alt="Perfi_2" />
                     <button className="edit-pic-button">📷</button>
@@ -44,7 +50,6 @@ function EditarPerfil() {
                             type="text"
                             value={sexo}
                             onChange={(e) => setSexo(e.target.value)}
-                            readOnly
                         />
                     </div>
                     <div className="form-group">
