@@ -3,9 +3,8 @@
 }
 
 .inf-card {
-    background: var(--PlomoOscuro);
+    background: var(--Primary);
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--Plomo);
     width: 375px;
     height: 748px;
 }
@@ -25,7 +24,9 @@
     max-width: 300px;
     border: none;
     border-radius: 20px;
-
     font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
