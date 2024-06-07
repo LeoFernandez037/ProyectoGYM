@@ -1,0 +1,80 @@
+.gimnasio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Blanco);
+}
+
+.ubi-card {
+    background: var(--PlomoOscuro);
+    border-radius: 8px;
+    width: 375px;
+    height: 812px;
+}
+
+.ubi-card h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.ubi-card h3{
+    line-height: 1;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.ubi-card p{
+    line-height: 1;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.mapa-imagen {
+    max-width: 55%;
+}
+
+.informacion {
+    font-size: 14px;
+}
+
+.imagenes-equipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.imagenes-equipos img {
+    width: 100%;
+    height: auto;
+}
+
+.contacto {
+    margin: 20px 0;
+}
+
+.contacto a {
+    color: var(--Blanco);
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+.volver-btn {
+    background-color: var(--Verde);
+    color: var(--Negro);
+    padding: 16px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.volver-btn:hover {
+    background-color: var(--Blanco);
+}
