@@ -1,4 +1,3 @@
-
 .exer{
     width: 375px;
     height: 285px;
@@ -10,8 +9,14 @@
     display: flex;
     border-radius: 20%;
 }
-.notification{
-    background-color: var(--Verde);
+.exercard{
+    background-color: var(--PlomoOscuro);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .just{
     display: flex;
@@ -87,7 +92,7 @@ height: 35px;
 color: var(--Blanco);
 font-size: 11px;
 }
-.notification{
+.exercard{
     position: absolute;
     top: 31%;
     bottom:0px;

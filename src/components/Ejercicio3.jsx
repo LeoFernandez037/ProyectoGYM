@@ -1,9 +1,9 @@
 import React from "react";
 import "./Ejercicio.css";
-import ImagenFlex from "../assets/flexion.jpg";
+import Img124 from "../assets/maripo.jpg";
 import { Link } from "react-router-dom";
 
-function Ejercicio() {
+function Ejercicio3() {
   const handleGoBack = () => {
     window.history.back();
   };
@@ -11,28 +11,25 @@ function Ejercicio() {
   return (
     <div className="card">
       <div className="exer">
-        <img className="exer" src={ImagenFlex} alt="" />
+        <img className="exer" src={Img124} alt="" />
       </div>
       <div className="exercard">
         <div className="tittlesexer">
           <div>
-            <div className="atom">Flexiones</div>
+            <div className="atom">Mariposa</div>
             <span className="time1">Ejercicios de Pecho</span>
           </div>
         </div>
         <div className="botns">
-          <button className="botn1">▶️ 60 min</button>
-          <button className="botn2">🔥 350 Cal</button>
+          <button className="botn1">▶️ 30 min</button>
+          <button className="botn2">🔥 450 Cal</button>
         </div>
         <div className="just">
-          Las flexiones son una forma efectiva de fortalecer el pecho, los
-          hombros, los tríceps y el core, mientras se mejora la resistencia
-          muscular. Para principiantes, puede ser recomendable comenzar con un
-          número más bajo, como 5 a 10 flexiones por serie
+        Si estás buscando aumentar la resistencia muscular, puedes optar por un peso más ligero y hacer de 12 a 15 repeticiones por serie. Por otro lado, si tu enfoque está en la fuerza máxima, puedes trabajar con un peso más pesado y hacer menos repeticiones, como de 4 a 6 por serie.
         </div>
 
         <div className="notif">
-          <img className="exer1" src={ImagenFlex} alt="" />
+          <img className="exer1" src={Img124} alt="" />
           <div className="letter">
             Manera correcta de hacer el ejercicio
             <span className="time">9:38 AM</span>
@@ -43,7 +40,7 @@ function Ejercicio() {
             Volver
           </button>
 
-          <Link to="/ejercicio2">
+          <Link to="/casa">
             <button className="boton123">Añadir</button>
           </Link>
         </div>
@@ -52,4 +49,4 @@ function Ejercicio() {
   );
 }
 
-export default Ejercicio;
+export default Ejercicio3;

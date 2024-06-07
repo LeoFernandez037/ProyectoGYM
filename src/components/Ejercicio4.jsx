@@ -43,7 +43,7 @@ function Ejercicio() {
             Volver
           </button>
 
-          <Link to="/ejercicio2">
+          <Link to="/casa">
             <button className="boton123">Añadir</button>
           </Link>
         </div>
