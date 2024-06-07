@@ -1,15 +1,16 @@
-#root{
+
+#root {
   text-align: center;
   margin: 0 auto;
 }
 
 :root {
-  --Blanco:rgba(255, 255, 255, 1);
+  --Blanco: rgba(255, 255, 255, 1);
   --Verde: rgba(208, 253, 62, 1);
   --Negro: rgba(0, 0, 0, 1);
-  --Primary:rgb(27,27,27);
+  --Primary: rgb(27, 27, 27);
   --PlomoOscuro: rgba(44, 44, 46, 1);
-  --Plomo:rgb(84,84,84);
+  --Plomo: rgb(84, 84, 84);
 }
 
 
@@ -49,10 +50,137 @@ label{
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--Negro);
 }
 
+.exercise-card1 {
+  background-color: var(--PlomoOscuro);
+  color: var(--Blanco);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+h2{
+  color: var(--Blanco);
+}
+.exercise-card {
+  background-color: var(--Primary);
+  color: var(--Blanco);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.exercise-page1 {
+  background-color: var(--Primary);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+.count-text{
+  color: var(--Verde);
+}
+
+.exercise-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.exercise-title {
+  color: var(--Blanco);
+  font-size: 24px;
+  margin: 10px 0;
+  display: block;  
+}
+
+.exercise-subtitle {
+  font-size: 18px;
+  color: var(--Verde);
+  margin-bottom: 10px;
+  display: block;  
+}
+
+
+.exercise-description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.video-link {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--PlomoOscuro);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.exercise-button {
+  background-color: var(--Verde);
+  color: var(--Negro);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+.exercise-muscle-group{
+  color: var(--Verde);
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--Verde);
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--PlomoOscuro);
+  border-radius: 10px;
+}
+
+.user-name {
+  margin-left: 10px;
+  color: var(--Blanco);
+}
+
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.social-page {
+  text-align: left;
+  padding: 20px;
+}
+
+.social-page h1 {
+  color: var(--Blanco);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+}
+
+.social-page h2 {
+  color: var(--Plomo);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+}

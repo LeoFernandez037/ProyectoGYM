@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Navegacion from "./Router/Navegacion";
 import React from "react";
