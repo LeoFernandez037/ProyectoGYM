@@ -4,12 +4,18 @@
 }
 
 .per-card {
-    background: var(--PlomoOscuro);
+    background: var(--Primary);
     border-radius: 8px;
     width: 375px;
     height: 748px;
+    font-family: "Rajdhani", sans-serif;
 }
 
+input{
+    background-color: var(--Primary);
+    color: var(--Blanco);
+    font-size: large;
+}
 .edit-header {
     display: flex;
     justify-content: center; 
@@ -51,14 +57,19 @@
     right: -15px;
     width: 50px; 
     height: 50px; 
-    background-color:var(--Primary);
+    background-color:var(--PlomoOscuro);
     border-radius: 50%; 
+}
+
+.edit-pic-button:hover{
+    background-color: var(--PlomoOscuro);
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .form-group {
@@ -87,4 +98,14 @@ input {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.save-button:hover{
+    background-color: var(--Verde);
+    color: var(--Negro);
+}
+line{
+    width: 280px;
+    height: 0px;
+    border: 1px solid var(--Plomo);
 }

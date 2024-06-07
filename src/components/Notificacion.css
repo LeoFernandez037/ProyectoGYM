@@ -4,7 +4,7 @@
 }
 
 .not-card {
-    margin-top:20px;
+    margin-top: 20px;
     background: var(--Primary);
     border-radius: 8px;
     display: flex;
@@ -26,11 +26,11 @@ h2 {
     border-radius: 50px;
     height: 35px;
     width: 330px;
-    margin-top:20px;
+    margin-top: 20px;
     justify-content: space-around;
 }
 
-.tab {
+.tab {    
     background-color: transparent;
     border: hidden;
     color: white;

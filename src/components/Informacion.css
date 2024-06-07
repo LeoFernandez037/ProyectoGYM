@@ -7,6 +7,23 @@
     border-radius: 8px;
     width: 375px;
     height: 748px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Tarjeta{
+    margin-top: 40px;
+}
+
+.buttonContainer{
+    background-color: var(--PlomoOscuro);
+    color: var(--Blanco);
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border-radius:20px ;
 }
 
 .inf-card h1 {
@@ -16,17 +33,25 @@
     color: var(--Blanco);
 }
 
+h2{
+    margin: 10px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px !important;
+}
+
 .inf-button {
     background-color: var(--Verde);
     color: var(--Negro);
-    padding: 25px;
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
+    height: 50px;
     border: none;
     border-radius: 20px;
     font-size: 18px;
     font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
+    font-size: x-large;
 }
 
