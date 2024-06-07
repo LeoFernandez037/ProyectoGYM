@@ -12,7 +12,7 @@ function Login() {
     alert(`Email: ${email}, Password: ${password}`);
   };
   return (
-    <div>
+    <>
       <div className="containerL">
         <div className="login-card">
           <div className="ImagenLog">
@@ -52,7 +52,7 @@ function Login() {
           <br />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -3,7 +3,7 @@
 .slick-dots li.slick-active button:before {
     opacity: 1 !important;
     color: var(--Verde) !important; 
-    font-size: 26px;
+    font-size: 26px !important;
 }
 .slick-dots li button:before {
     padding-top: 10px;
@@ -18,7 +18,7 @@
     content: '•';
     text-align: center;
     opacity: .25;
-    color: black;
+    color: black !important;
     -webkit-font-smoothing: antialiased;
 }
 .containerC {

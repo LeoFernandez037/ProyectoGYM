@@ -171,6 +171,9 @@ h2{
 .social-page {
   text-align: left;
   padding: 20px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .social-page h1 {

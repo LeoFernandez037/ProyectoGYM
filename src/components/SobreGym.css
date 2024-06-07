@@ -6,10 +6,14 @@
 }
 
 .ubi-card {
-    background: var(--PlomoOscuro);
+    margin-top: 15px;
+    background: var(--Primary);
     border-radius: 8px;
     width: 375px;
     height: 812px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .ubi-card h1{
@@ -23,16 +27,21 @@
     line-height: 1;
     margin-left: 30px;
     text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .ubi-card p{
+    display: flex;
     line-height: 1;
     margin-left: 30px;
     text-align: left;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 .mapa-imagen {
-    max-width: 55%;
+    max-width: 70%;
 }
 
 .informacion {
@@ -52,12 +61,13 @@
 }
 
 .contacto {
-    margin: 20px 0;
+    margin: 5px ;
 }
 
 .contacto a {
     color: var(--Blanco);
     text-decoration: none;
+    margin-top: 5px;
 }
 
 .contacto a:hover {

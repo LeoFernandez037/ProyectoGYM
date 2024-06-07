@@ -11,7 +11,7 @@ class BottomNav extends React.Component {
   render() {
     return (
       <div className="bottom-nav">
-        <Link to="/users">
+        <Link to="/social">
           <img src={usersIcon} alt="Users" className="icon" />
         </Link>
         <Link to="/home">

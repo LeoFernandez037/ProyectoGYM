@@ -36,13 +36,13 @@ const Profile = () => {
             </li>
             <li>
               Sobre el gimnasio
-              <Link to="/informacion">
+              <Link to="/sobreG">
                 <span className="flecha">➡</span>
               </Link>
             </li>
             <li>
               Calendario personal
-              <Link to="/informacion">
+              <Link to="/calendario">
                 <span className="flecha">➡</span>
               </Link>
             </li>

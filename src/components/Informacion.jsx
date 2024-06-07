@@ -15,13 +15,13 @@ function Informacion() {
             <h2>Etapas de aumentar peso</h2>
           </div>
           <div className="buttonContainer">
-            <Link to="/casa">
+            <Link to="/rutina">
               <button className="inf-button">Dieta</button>
             </Link>
             <h2>Dieta de masa y volumen</h2>
           </div>
           <div className="buttonContainer">
-            <Link to="/casa">
+            <Link to="/rutina">
               <button className="inf-button">Rutina de ejercicios</button>
             </Link>
             <h2>Rutinas personalizadas para ti</h2>
