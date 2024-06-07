@@ -11,10 +11,10 @@ function Informacion() {
           <Link to="/historial">
             <button className="inf-button">Historial de entrenamiento</button>
           </Link>
-          <Link to="/casa">
+          <Link to="/ejercicio">
             <button className="inf-button">Etapas de aumentar peso</button>
           </Link>
-          <Link to="/casa">
+          <Link to="/notificacion">
             <button className="inf-button">Dieta</button>
           </Link>
           <Link to="/casa">
