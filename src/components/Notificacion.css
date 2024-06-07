@@ -1,15 +1,17 @@
 .notifications {
-    color: var(--Blanco);
+    color: white;
     display: flex;
 }
 
 .not-card {
-    background: var(--PlomoOscuro);
+    margin-top:20px;
+    background: var(--Primary);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     width: 375px;
     height: 748px;
+    align-items: center;
 }
 
 h2 {
@@ -23,17 +25,28 @@ h2 {
     margin-bottom: 25px;
     border-radius: 50px;
     height: 35px;
+    width: 330px;
+    margin-top:20px;
+    justify-content: space-around;
 }
 
 .tab {
-    background-color: var(--Plomo);
-    color: var(--Blanco);
-    padding: 15px;
+    background-color: transparent;
+    border: hidden;
+    color: white;
+    margin: 0px;
+    width: 110px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .tab.active {
     background-color: var(--Verde);
-    color:var(--Negro);
+    color:#121212;
+    border-radius: 40px;
+    width: 110px;
 }
 
 .notifications-list {
@@ -49,11 +62,13 @@ h2 {
     font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     font-style: normal;
+    width: 335px;
 }
 
 .notification .time {
     font-size: 12px;
-    color: var(--Plomo);
+    margin-top: 6px;
+    color: var(--Verde);
 }
 
 .notification h3 {
@@ -72,5 +87,5 @@ h2 {
 .notification p {
     margin-top: 5px;
     font-size: 14px;
-    color: var(--Blanco);
+    color: #ccc;
 }
