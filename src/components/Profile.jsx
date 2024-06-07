@@ -41,19 +41,13 @@ const Profile = () => {
               </Link>
             </li>
             <li>
-              Ajustes
-              <Link to="/informacion">
-                <span className="flecha">➡</span>
-              </Link>
-            </li>
-            <li>
               Calendario personal
               <Link to="/informacion">
                 <span className="flecha">➡</span>
               </Link>
             </li>
             <p className="logout">
-              <a href="/logout">Cerrar sesión</a>
+              <a href="/">Cerrar sesión</a>
             </p>
           </ul>
         </nav>

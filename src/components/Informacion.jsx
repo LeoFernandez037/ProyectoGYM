@@ -8,26 +8,24 @@ function Informacion() {
       <div className="inf-card">
         <h1 class="rajdhani-bold">Información</h1>
         <div className="Tarjeta">
-          <Link to="/historial">
-            <button className="inf-button">Historial de entrenamiento</button>
-          </Link>
-          <Link to="/casa">
-            <button className="inf-button">Etapas de aumentar peso</button>
-          </Link>
-          <Link to="/casa">
-            <button className="inf-button">Dieta</button>
-          </Link>
-          <Link to="/casa">
-            <button className="inf-button">Dieta de masa y volumen</button>
-          </Link>
-          <Link to="/casa">
-            <button className="inf-button">Rutina de ejercicios</button>
-          </Link>
-          <Link to="/casa">
-            <button className="inf-button">
-              Rutinas personalizadas para ti
-            </button>
-          </Link>
+          <div className="buttonContainer">
+            <Link to="/historial">
+              <button className="inf-button">Historial de entrenamiento</button>
+            </Link>
+            <h2>Etapas de aumentar peso</h2>
+          </div>
+          <div className="buttonContainer">
+            <Link to="/casa">
+              <button className="inf-button">Dieta</button>
+            </Link>
+            <h2>Dieta de masa y volumen</h2>
+          </div>
+          <div className="buttonContainer">
+            <Link to="/casa">
+              <button className="inf-button">Rutina de ejercicios</button>
+            </Link>
+            <h2>Rutinas personalizadas para ti</h2>
+          </div>
         </div>
       </div>
     </div>
