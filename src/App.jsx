@@ -1,36 +1,26 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import BottomNav from "./components/BottomNav.jsx";
-import ExercisePage from "./components/InfoTar/ExercisePage.jsx"; 
-import ExerciseDetail from "./components/Comoharan/ExerciseDetail.jsx";
 import "./App.css";
-import HomePage from "./components/ejercicios/HomePage.jsx";
-import SocialPage from './components/TarjetaSocial/SocialPage.jsx';
+import Navegacion from "./Router/Navegacion";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
+import Register from "./components/Register";
+
 function App() {
   return (
     <>
-     
+      <div className="appContainer">
         <div className="componentsContainer">
-          <ExercisePage />
-   
+          <BrowserRouter>
+            <Routes>
+              <Route path="/ProyectoGYM" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/*" element={<Navegacion />} />
+            </Routes>
+          </BrowserRouter>
         </div>
-        <BottomNav />
-     
-      
-        <div className="componentsContainer">
-          <ExerciseDetail />
-        </div>
-        <BottomNav />
-      
-        <div className="componentsContainer">
-          <HomePage />
-        </div>
-        <BottomNav />
-        <div className="componentsContainer">
-          <SocialPage />
-        </div>
-        <BottomNav />
+      </div>
     </>
   );
 }

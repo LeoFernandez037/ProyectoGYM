@@ -1,0 +1,80 @@
+.containerH {
+    color: var(--Blanco);
+    display: flex;
+}
+
+.his-header {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    font-size: 10px;
+}
+
+.arrow1 {
+    margin-left: 10px;
+    font-size: 38px;
+    color: var(--Verde);
+    margin-right: 20px;
+
+}
+
+.arrow1:active {
+    color: var(--Blanco); 
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 23px;
+}
+
+.his-card {
+    margin-top: 20px;
+    background-color: var(--Primary);
+    border-radius: 8px;
+    max-width: 500px;
+    min-height: 400px;
+    width: 375px;
+    height: 748px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:50px;
+}
+
+.workout-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--PlomoOscuro);
+    margin: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.workout-card img {
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.workout-card h2 {
+    margin: 0;
+}
+
+.workout-card p {
+    margin: 5px 0 0;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 38px;
+    color: var(--Verde); 
+}
+
+.arrow:active {
+    color: var(--Blanco); 
+}
