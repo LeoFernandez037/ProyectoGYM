@@ -11,10 +11,11 @@
 }
 
 .arrow1 {
-    margin-left: auto;
+    margin-left: 10px;
     font-size: 38px;
     color: var(--Verde);
-    margin-right: 40px;
+    margin-right: 20px;
+
 }
 
 .arrow1:active {
@@ -28,24 +29,29 @@ h1 {
 }
 
 .his-card {
-    background: var(--PlomoOscuro);
+    margin-top: 20px;
+    background-color: var(--Primary);
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--Plomo);
     max-width: 500px;
     min-height: 400px;
     width: 375px;
     height: 748px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:50px;
 }
 
 .workout-card {
     display: flex;
     align-items: center;
-    background-color: var(--Primary);
+    background-color: var(--PlomoOscuro);
     margin: 30px;
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 13px;
+    justify-content: space-between;
 }
 
 .workout-card img {
@@ -66,7 +72,7 @@ h1 {
 .arrow {
     margin-left: auto;
     font-size: 38px;
-    color: var(--Verde);  
+    color: var(--Verde); 
 }
 
 .arrow:active {

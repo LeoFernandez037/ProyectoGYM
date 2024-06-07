@@ -9,7 +9,7 @@ function Notificacion() {
   return (
     <div className="notifications">
       <div className="not-card">
-        <h2 class="rajdhani-bold">Notificaciones</h2>
+        <h1 class="rajdhani-bold">Notificaciones</h1>
         <div className="tabs">
           <button
             className={`tab ${selectedTab === "Nuevo" ? "active" : ""}`}

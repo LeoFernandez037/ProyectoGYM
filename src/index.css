@@ -43,7 +43,9 @@
   font-style: normal;
   font-size:50px;
 }
-
+label{
+  color: var(--Verde);
+}
 body {
   margin: 0;
   display: flex;
@@ -53,7 +55,4 @@ body {
   background-color: var(--Negro);
 }
 
-button:hover{
-  background-color: transparent;
-}
 
