@@ -30,7 +30,6 @@ h1 {
 .his-card {
     background: var(--PlomoOscuro);
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--Plomo);
     max-width: 500px;
     min-height: 400px;
     width: 375px;

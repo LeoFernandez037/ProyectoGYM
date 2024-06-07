@@ -16,7 +16,6 @@
 .Casa-card {
     background: var(--PlomoOscuro);
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--Plomo);
     width: 375px;
     height: 748px;
 }

@@ -26,7 +26,7 @@ function Home() {
                 <div className="Cabeza">
                     <h1>Hola Gabriela!</h1>
                     <p>No te olvides que el día de hoy entrenas: <strong>PIERNA</strong></p>
-                    <h1>Anuncios</h1>
+                    <h1>ANUNCIOS</h1>
                 </div>
                 <Slider {...settings}>
                     <CarouselItem>

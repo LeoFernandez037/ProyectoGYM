@@ -8,6 +8,7 @@ import "./Navegacion.css";
 import Historial from '../components/Historial';
 import Profile from '../components/Profile.jsx';
 import EditarPerfil from '../components/EditarPerfil.jsx';
+import SobreGym from '../components/SobreGym.jsx';
 
 function Navegacion() {
     return (
@@ -20,6 +21,7 @@ function Navegacion() {
                     <Route path="/notificacion" element={<Notificacion/>} />
                     <Route path="/profile" element={<Profile/>} />
                     <Route path="/ediprofile" element={<EditarPerfil/>} />
+                    <Route path="/sobreG" element={<SobreGym/>} />
                     <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} /> 
                 </Routes>
                 <BottomNav />

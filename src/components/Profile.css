@@ -1,12 +1,11 @@
 .profile-container {
     display: flex;
-    color: white;
+    color: var(--Blanco);
 }
 
 .profile-card {
-    background: rgb(51, 52, 51);
+    background: var(--Primary);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     width: 375px;
@@ -50,7 +49,7 @@
 }
 
 .highlight {
-    color: #c4ff00;
+    color: var(--Verde);
     font-weight: bold;
 }
 
@@ -88,7 +87,7 @@
 }
 
 .profile-nav ul li a {
-    color: white;
+    color: var(--Blanco);
     text-decoration: none;
 }
 
@@ -98,7 +97,7 @@
 }
 
 .membership-status a {
-    color: #24FF3A; 
+    color: var(--Verde); 
     text-decoration: none; 
 }
 
