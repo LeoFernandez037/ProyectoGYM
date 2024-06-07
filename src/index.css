@@ -12,6 +12,7 @@
   --Plomo:rgb(84,84,84);
 }
 
+
 .rajdhani-light {
   font-family: "Rajdhani", sans-serif;
   font-weight: 300;
@@ -40,6 +41,7 @@
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size:50px;
 }
 
 body {
@@ -50,3 +52,8 @@ body {
   min-height: 100vh;
   background-color: var(--Negro);
 }
+
+button:hover{
+  background-color: transparent;
+}
+

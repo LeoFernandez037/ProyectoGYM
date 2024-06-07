@@ -18,8 +18,11 @@ h2 {
 }
 
 .tabs {
+    background-color: var(--PlomoOscuro);
     display: flex;
     margin-bottom: 25px;
+    border-radius: 50px;
+    height: 35px;
 }
 
 .tab {
@@ -43,6 +46,9 @@ h2 {
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 15px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .notification .time {
@@ -52,10 +58,19 @@ h2 {
 
 .notification h3 {
     margin: 5px;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tittleTime{
+    display: flex;
+    justify-content: space-between
 }
 
 .notification p {
+    margin-top: 5px;
     font-size: 14px;
     color: var(--Blanco);
 }

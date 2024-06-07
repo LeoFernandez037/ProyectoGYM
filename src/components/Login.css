@@ -5,7 +5,7 @@
 }
 
 .login-card {
-    background: var(--PlomoOscuro);
+    background: var(--Primary);
     border-radius: 8px;
     width: 375px;
     height: 812px;

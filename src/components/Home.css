@@ -1,20 +1,46 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
-.slick-dots li button:before {
-    color:var(--Verde);
-}
-
 .slick-dots li.slick-active button:before {
-    color:var(--Verde);
+    opacity: 1 !important;
+    color: var(--Verde) !important; 
+    font-size: 26px;
 }
-
+.slick-dots li button:before {
+    padding-top: 10px;
+    font-family: 'slick';
+    font-size: 26px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
 .containerC {
     display: flex;
     color: var(--Blanco);
 }
 
+.rajdhani-semibold{
+    padding-top: 40px;
+}
+
+.anuncios{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:40px;
+  background-color: var(--PlomoOscuro);
+  border-radius: 10px;
+}
+
 .Casa-card {
-    background: var(--PlomoOscuro);
+    background: var(--Primary);
     border-radius: 8px;
     width: 375px;
     height: 748px;

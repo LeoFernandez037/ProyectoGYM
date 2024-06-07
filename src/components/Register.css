@@ -5,9 +5,8 @@
 }
 
 .register-card {
-    background: var(--PlomoOscuro);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px var(--Plomo);
+    background: var(--Primary);
+    border-radius: 8px; 
     width: 375px;
     height: 812px;
 }
