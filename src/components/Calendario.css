@@ -93,7 +93,7 @@
   gap: 16px;
   margin: 10px; /* Ajustado el margen para asegurar que no se salga */
   border-radius: 16px;
-  width: calc(100% - 20px); /* Ajuste del ancho para evitar desbordamiento */
+  width: calc(90% - 20px); /* Ajuste del ancho para evitar desbordamiento */
 }
 
 .activity-img {

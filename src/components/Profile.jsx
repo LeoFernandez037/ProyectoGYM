@@ -31,7 +31,7 @@ const Profile = () => {
                         <li>Editar perfil<Link to="/ediprofile" ><span className="flecha">➡</span></Link></li>
                         <li>Sobre el gimnasio<Link to="/informacion" ><span className="flecha">➡</span></Link></li>
                         <li>Ajustes<Link to="/informacion" ><span className="flecha">➡</span></Link></li>
-                        <li>Calendario personal<Link to="/calendario2" ><span className="flecha">➡</span></Link></li>
+                        <li>Calendario personal<Link to="/calendario1" ><span className="flecha">➡</span></Link></li>
                         <p className="membership-status"><a href="/logout">Estado de Membresía</a></p>
                         <p className="logout"><a href="/logout">Cerrar sesión</a></p>
                     </ul>

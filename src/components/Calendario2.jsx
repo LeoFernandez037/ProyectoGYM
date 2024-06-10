@@ -47,8 +47,8 @@ function Calendario2() {
         </div>
       </div>
       <img loading="lazy" src={estats} className="calendario2-estats-img" alt="Estats Icon" />
-      <button className="calendario2-back-button">Entrenar ahora</button>
-      <p></p>
+      
+      
       <button className="calendario2-back-button">Volver</button>
     </div>
   );

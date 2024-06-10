@@ -8,7 +8,7 @@ import "./Navegacion.css";
 import Historial from '../components/Historial';
 import Profile from '../components/Profile.jsx';
 import EditarPerfil from '../components/EditarPerfil.jsx';
-import Calendario2 from '../components/Calendario2.jsx';
+import Calendario1 from '../components/Calendario.jsx';
 
 function Navegacion() {
     return (
@@ -21,7 +21,7 @@ function Navegacion() {
                     <Route path="/notificacion" element={<Notificacion/>} />
                     <Route path="/profile" element={<Profile/>} />
                     <Route path="/ediprofile" element={<EditarPerfil/>} />
-                    <Route path="/calendario2" element={<Calendario2/>} />
+                    <Route path="/calendario1" element={<Calendario1/>} />
                     
                     <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} /> 
                 </Routes>
