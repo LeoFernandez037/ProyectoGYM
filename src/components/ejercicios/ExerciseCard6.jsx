@@ -2,8 +2,8 @@ import React from 'react';
 import Image from './Image';
 import Text from './Text1';
 
-const ExerciseCard6 = ({ nombreE, musculo, InformacionE, imagen }) => (
-   <div className="exercise-card">
+const ExerciseCard6 = ({ nombreE, musculo, InformacionE, imagen,onClick}) => (
+   <div className="exercise-card" onClick={onClick}>
   <Image src={imagen} alt={nombreE} />
   <div className="exercise-info">
     <Text className="exercise-title">{nombreE}</Text>
