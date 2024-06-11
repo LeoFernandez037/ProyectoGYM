@@ -1,0 +1,44 @@
+.containerMenu {
+    display: flex;
+}
+
+.menuIn-card {
+    background: var(--Primary);
+    border-radius: 8px;
+    width: 375px;
+    height: 748px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuIn-Tarjeta{
+    margin-top: 40px;
+}
+
+.menuIn-buttonContainer{
+    width: 300px;
+    height: 130px;
+}
+
+.menuIn-card h1 {
+    text-align: center;
+    margin-top: 50px; 
+    font-size: 45px;
+    color: var(--Blanco);
+}
+
+.menuIn-button {
+    background-color: var(--Verde);
+    color: var(--Negro);
+    width: 300px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+}

@@ -17,7 +17,7 @@ class BottomNav extends React.Component {
         <Link to="/home">
           <img src={homeIcon} alt="Home" className="icon" />
         </Link>
-        <Link to="/informacion">
+        <Link to="/menuIn">
           <img src={statsIcon} alt="Stats" className="icon" />
         </Link>
         <div className="bell-icon-wrapper">
