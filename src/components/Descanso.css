@@ -1,0 +1,71 @@
+.ContenedorContador{
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--Blanco);
+    background-color: var(--Primary);
+    border-radius: 20px;
+    height: 480px !important;
+    width: 375px;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DescansoHeader{
+    margin-top: 20px !important;
+}
+
+.buttonsContainer{
+    width: 300px;
+    height: 250px !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+img{
+    position: relative;
+    z-index: 0;
+}
+
+.botonTiempo{
+    margin: 5px;
+    width: 110px;
+    height: 100px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: var(--PlomoOscuro);
+    color: var(--Blanco);
+    border: 0px;
+}
+
+.Contador{
+    font-size: 90px;
+    color: var(--Verde);
+}
+
+.Btn_Control{
+    width: 300px;
+    height: 30px;
+    color: var(--Blanco);
+    background-color: var(--PlomoOscuro);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.DescansoContainer{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

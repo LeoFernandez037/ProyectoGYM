@@ -1,6 +1,4 @@
 .homepage{
-    overflow-y: scroll;
-    overflow-x: hidden;
     font-family: "Rajdhani", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -8,7 +6,9 @@
 
 .exercise-template{
     width: 375px;
-    height: 500px;
+    height: 547px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .slick-dots li.slick-active button:before {

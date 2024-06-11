@@ -13,6 +13,7 @@ import Calendario from "../components/Calendario.jsx";
 import SocialPage from "../components/TarjetaSocial/SocialPage";
 import HomePage from "../components/ejercicios/HomePage";
 import ExercisePage from "../components/InfoTar/ExercisePage";
+import Descanso from "../components/Descanso.jsx";
 
 function Navegacion() {
   return (
@@ -30,6 +31,7 @@ function Navegacion() {
           <Route path="/social" element={<SocialPage />} />
           <Route path="/rutina" element={<HomePage />} />
           <Route path="/ejercicio" element={<ExercisePage />} />
+          <Route path="/descanso" element={<Descanso />} />
           <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} />
         </Routes>
         <BottomNav />
