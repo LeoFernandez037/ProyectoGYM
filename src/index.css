@@ -140,6 +140,7 @@ h2{
 .exercise-muscle-group{
   color: var(--Verde);
 }
+
 .avatar {
   width: 50px;
   height: 50px;
@@ -165,6 +166,8 @@ h2{
 .user-list {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  height: 650px;
 }
 
 
@@ -183,7 +186,7 @@ h2{
 }
 
 .social-page h2 {
-  color: var(--Plomo);
+  color: var(--Blanco);
   font-family: "Rajdhani", sans-serif;
   font-weight: 400;
 }
