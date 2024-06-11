@@ -2,83 +2,49 @@ import React, { useState } from 'react';
 import './Aprendiz.css';
 
 function Aprendiz() {
-    const [isExpanded, setIsExpanded] = useState(false);
+    const [expandedTask, setExpandedTask] = useState(null);
 
-    const handleExpandClick = () => {
-        setIsExpanded(true);
+    const handleExpandClick = (taskId) => {
+        setExpandedTask(taskId);
     };
+
+    const taskData = [
+        { id: 1, name: 'Adan Carlos', routine: 'Piernas', currentTask: 'Peso muerto con pierna', startTime: 'Empezado hace 10 minutos', status: 'Terminado' },
+        { id: 2, name: 'Maria Alarcon', routine: 'Piernas', currentTask: 'Patada trasera de gluteos', startTime: 'Empezado hace 5 minutos', status: 'Terminado' },
+        { id: 3, name: 'Marcos Matias', routine: 'Pendiente', currentTask: 'Pendiente', startTime: 'No asignado', status: 'No Terminado' }
+    ];
 
     return (
         <div className="apren">
             <div className="apren-container">
                 <h1>Aprendices</h1>
-                <div className={`task ${isExpanded ? 'expanded' : ''}`}>
-
-                    {!isExpanded && (
-                        <button className="expand-button" onClick={handleExpandClick}>
+                {taskData.map(task => (
+                    <div key={task.id} className={`task ${expandedTask === task.id ? 'expanded' : ''}`}>
+                        <button className="expand-button" onClick={() => handleExpandClick(task.id)}>
                             <div className="task-header">
-                                <span>Adan Carlos:</span>
-                                <span>Rutina: Piernas</span>
+                                <span>{task.name}:</span>
+                                <span>Rutina: {task.routine}</span>
                             </div>
                         </button>
-                    )}
-                    <h2>Peso muerto con pierna</h2>
-                    <h2>Empezado hace 10 minutos</h2>
-                    {isExpanded && (
-                        <div className="task-footer">
-                            <span>Patada trasera de gluteos</span>
-                            <span>Terminado</span>
-                            <button className="validate-button">Validar sesión</button>
-                            <button className="noV-button">No validar sesión</button>
-                        </div>
-                    )}
-                </div>
-                <div className={`task ${isExpanded ? 'expanded' : ''}`}>
-
-                    {!isExpanded && (
-                        <button className="expand-button" onClick={handleExpandClick}>
-                            <div className="task-header">
-                            <span>Maria Alarcon:</span>
-                            <span>Rutina: Piernas</span>
+                        {expandedTask !== task.id && (
+                            <>
+                                <h2>{task.currentTask}</h2>
+                                <h2>{task.startTime}</h2>
+                            </>
+                        )}
+                        {expandedTask === task.id && (
+                            <div className="task-footer">
+                                <h2>{task.currentTask}</h2>
+                                <h2>{task.status}</h2>
+                                <button className="validate-button">Validar sesión</button>
+                                <button className="noV-button">No validar sesión</button>
                             </div>
-                        </button>
-                    )}
-                    <h2>Patada trasera de gluteos</h2>
-                    <h2>Empezado hace 5 minutos</h2>
-                    {isExpanded && (
-                        <div className="task-footer">
-                            <span>Patada trasera de gluteos</span>
-                            <span>Terminado</span>
-                            <button className="validate-button">Validar sesión</button>
-                            <button className="noV-button">No validar sesión</button>
-                        </div>
-                    )}
-                </div>
-                <div className={`task ${isExpanded ? 'expanded' : ''}`}>
-
-                    {!isExpanded && (
-                        <button className="expand-button" onClick={handleExpandClick}>
-                            <div className="task-header">
-                                <span>Marcos Matias:</span>
-                                <span>Rutina: Pendiente</span>
-                            </div>
-                        </button>
-                    )}
-                    <h2>Pendiente</h2>
-                    <h2>No asignado</h2>
-                    {isExpanded && (
-                        <div className="task-footer">
-                            <span>Patada trasera de gluteos</span>
-                            <span>Terminado</span>
-                            <button className="validate-button">Validar sesión</button>
-                            <button className="noV-button">No validar sesión</button>
-                        </div>
-                    )}
-                </div>
+                        )}
+                    </div>
+                ))}
             </div>
         </div>
     );
 }
 
-
-export default Aprendiz
+export default Aprendiz;
