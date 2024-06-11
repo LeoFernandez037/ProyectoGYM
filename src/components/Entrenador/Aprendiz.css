@@ -1,5 +1,6 @@
 .apren {
     display: flex;
+    font-family: "Rajdhani", sans-serif;
 }
 
 .apren-container {
@@ -11,6 +12,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.apen-header {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    font-size: 10px;
+}
+
+.arrw1 {
+    margin-left: 10px;
+    font-size: 38px;
+    color: var(--Verde);
+    margin-right: 20px;
 }
 
 .apren-container h1 {

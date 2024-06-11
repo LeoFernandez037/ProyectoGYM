@@ -15,6 +15,7 @@ import HomePage from "../components/ejercicios/HomePage";
 import ExercisePage from "../components/InfoTar/ExercisePage";
 import MenuInter from "../components/Entrenador/MenuInter.jsx";
 import Aprendiz from "../components/Entrenador/Aprendiz.jsx";
+import Cronograma from "../components/Entrenador/Cronograma.jsx";
 
 function Navegacion() {
   return (
@@ -34,6 +35,7 @@ function Navegacion() {
           <Route path="/ejercicio" element={<ExercisePage />} />
           <Route path="/menuIn" element={<MenuInter />} />
           <Route path="/aprend" element={<Aprendiz />} />
+          <Route path="/crono" element={<Cronograma />} />
           <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} />
         </Routes>
         <BottomNav />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './Aprendiz.css';
 
 function Aprendiz() {
@@ -17,7 +18,12 @@ function Aprendiz() {
     return (
         <div className="apren">
             <div className="apren-container">
-                <h1>Aprendices</h1>
+                <div className="apen-header">
+                    <Link to="/menuIn">
+                        <span className="arro1">⬅</span>
+                    </Link>
+                    <h1>Aprendices</h1>
+                </div>
                 {taskData.map(task => (
                     <div key={task.id} className={`task ${expandedTask === task.id ? 'expanded' : ''}`}>
                         <button className="expand-button" onClick={() => handleExpandClick(task.id)}>

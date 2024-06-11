@@ -14,7 +14,7 @@ function MenuInter() {
                         </Link>
                     </div>
                     <div className="menuIn-buttonContainer">
-                        <Link to="/rutina">
+                        <Link to="/crono">
                             <button className="menuIn-button">Cronograma</button>
                         </Link>
                     </div>
