@@ -1,0 +1,88 @@
+.containerMem {
+    font-family: "Rajdhani", sans-serif;
+}
+
+.Mem-container {
+    background: var(--Primary);
+    border-radius: 8px;
+    width: 375px;
+    height: 748px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Mem-container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--Blanco);
+}
+
+.Mem-header {
+    display: flex;
+    align-items: center;
+}
+
+.arow1 {
+    font-size: 40px;
+    color: var(--Verde);
+    text-align: right;
+}
+
+.Mem-card {
+    background-color: var(--Verde);
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 250px;
+}
+
+.Mem-info {
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2px;
+
+}
+
+.Mem-details {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    color: var(--Blanco);
+    text-align: left;
+}
+
+.Mem-date {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.Mem-details p, .Mem-details strong {
+    margin: 0;
+    padding: 1px;
+}
+
+.Mem-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.accept {
+    background-color: #00008b;
+    color: var(--Blanco);
+}
+
+.reject {
+    background-color: #8b0000;
+    color: var(--Blanco);
+}

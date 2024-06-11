@@ -1,9 +1,10 @@
-.notifications {
-    color: white;
+.notifi {
+    color: var(--Blanco);
     display: flex;
+    font-family: "Rajdhani", sans-serif;
 }
 
-.not-card {
+.noti-card {
     margin-top: 20px;
     background: var(--Primary);
     border-radius: 8px;
@@ -19,7 +20,7 @@ h2 {
     font-size: 35px;
 }
 
-.tabs {
+.tabas {
     background-color: var(--PlomoOscuro);
     display: flex;
     margin-bottom: 25px;
@@ -30,10 +31,10 @@ h2 {
     justify-content: space-around;
 }
 
-.tab {    
+.taba {    
     background-color: transparent;
     border: hidden;
-    color: white;
+    color: var(--Blanco);
     margin: 0px;
     width: 110px;
     font-family: "Rajdhani", sans-serif;
@@ -42,19 +43,19 @@ h2 {
     font-size: 16px;
 }
 
-.tab.active {
+.taba.active {
     background-color: var(--Verde);
-    color:#121212;
+    color:var(--Negro);
     border-radius: 40px;
     width: 110px;
 }
 
-.notifications-list {
+.noti-list {
     display: flex;
     flex-direction: column;
 }
 
-.notification {
+.noti {
     background-color: var(--PlomoOscuro);
     padding: 15px;
     border-radius: 15px;
@@ -65,13 +66,13 @@ h2 {
     width: 335px;
 }
 
-.notification .time {
+.noti .timeNoti {
     font-size: 12px;
     margin-top: 6px;
     color: var(--Verde);
 }
 
-.notification h3 {
+.noti h3 {
     margin: 5px;
     font-size: 20px;
     font-family: "Rajdhani", sans-serif;
@@ -79,12 +80,12 @@ h2 {
     font-style: normal;
 }
 
-.tittleTime{
+.tittleNoti{
     display: flex;
     justify-content: space-between
 }
 
-.notification p {
+.noti p {
     margin-top: 5px;
     font-size: 14px;
     color: #ccc;

@@ -20,7 +20,7 @@ function Aprendiz() {
             <div className="apren-container">
                 <div className="apen-header">
                     <Link to="/menuIn">
-                        <span className="arro1">⬅</span>
+                        <span className="arrw1">⬅</span>
                     </Link>
                     <h1>Aprendices</h1>
                 </div>

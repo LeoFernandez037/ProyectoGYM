@@ -21,7 +21,7 @@ class BottomNav extends React.Component {
           <img src={statsIcon} alt="Stats" className="icon" />
         </Link>
         <div className="bell-icon-wrapper">
-          <Link to="/notificacion">
+          <Link to="/notiEnt">
             <img src={bellIcon} alt="Bell" className="icon" />
           </Link>
           <span className="notification-dot"></span>
