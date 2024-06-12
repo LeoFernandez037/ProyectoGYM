@@ -11,7 +11,7 @@ function NotiEntre() {
     };
 
     const handleButtonClick = () => {
-        navigate("/new-page"); // Replace with your desired route
+        navigate("/EnviNot"); // Replace with your desired route
     };
 
     return (

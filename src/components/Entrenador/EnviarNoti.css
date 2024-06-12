@@ -1,0 +1,97 @@
+.enviarNoti-container {
+    color: var(--Blanco);
+    display: flex;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.enviarNoti-card {
+    margin-top: 20px;
+    background: var(--Primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 748px;
+    align-items: center;
+    position: relative;
+}
+
+.enviarNoti-header {
+    display: flex;
+    align-items: center;
+}
+
+.rrrw1 {
+    font-size: 40px;
+    color: var(--Verde);
+    text-align: right;
+}
+
+.enviarNoti-container h1 {
+    text-align: center;
+    font-size: 48px;
+    color: var(--Blanco);
+}
+
+.schedule-button {
+    background-color:var(--Verde);
+    color: var(--Negro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.enviarNoti-form {
+    background-color:var(--PlomoOscuro);
+    padding: 35px;
+    border-radius: 10px;
+    margin-top: 15px;
+    position: relative;
+    text-align: left;
+}
+
+.enviarNoti-time {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: var(--Blanco);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    background-color: var(--Plomo);
+}
+
+.enviarNoti-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.discard-button,
+.save-send-button {
+    background-color:var(--Verde);
+    color: var(--Negro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.discard-button {
+    margin-right: 10px; /* Add right margin to create space */
+}
+
+.save-send-button {
+    margin-left: 10px; /* Add left margin to create space */
+}
