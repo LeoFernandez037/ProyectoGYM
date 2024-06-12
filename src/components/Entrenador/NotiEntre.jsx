@@ -1,15 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Use useNavigate instead of useHistory
 import "./NotiEntre.css";
 
 function NotiEntre() {
     const [selectedTab, setSelectedTab] = useState("Promociones");
+    const navigate = useNavigate(); // Use useNavigate for navigation
+
     const handleTabChange = (tab) => {
         setSelectedTab(tab);
     };
+
+    const handleButtonClick = () => {
+        navigate("/new-page"); // Replace with your desired route
+    };
+
     return (
         <div className="notifi">
             <div className="noti-card">
-                <h1 class="noti-bold">Notificaciones</h1>
+                <h1 className="noti-bold">Notificaciones</h1>
                 <div className="tabas">
                     <button
                         className={`taba ${selectedTab === "Nuevo" ? "active" : ""}`}
@@ -54,12 +62,22 @@ function NotiEntre() {
                                     de un día GRATIS!
                                 </p>
                             </div>
+                            <div className="noti">
+                                <div className="tittleNoti">
+                                    <h3>Atencion!!</h3>
+                                    <span className="timeNoti">8:25 AM</span>
+                                </div>
+                                <p>
+                                    Participa en nuestro desafio de 30 días y gana grandes premios.
+                                </p>
+                            </div>
                         </>
                     )}
                 </div>
+                <button className="add-button" onClick={handleButtonClick}>+</button>
             </div>
         </div>
     );
 }
 
-export default NotiEntre
+export default NotiEntre;
