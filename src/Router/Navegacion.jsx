@@ -14,7 +14,7 @@ import SocialPage from "../components/TarjetaSocial/SocialPage";
 import HomePage from "../components/ejercicios/HomePage";
 import ExercisePage from "../components/InfoTar/ExercisePage";
 import Descanso from "../components/Descanso.jsx";
-import Nutricion from "../components/Nutricion.jsx";
+import Nutricion from "../components/Chatbot/Nutricion.jsx";
 
 function Navegacion() {
   return (

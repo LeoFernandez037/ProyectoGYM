@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
+    "@google/generative-ai": "^0.12.0",
+    "dialogflow": "^1.2.0",
     "react": "^18.2.0",
     "react-chatbot-kit": "^2.2.2",
     "react-dom": "^18.2.0",
@@ -20,7 +22,8 @@
     "react-slick": "^0.30.2",
     "react-timer-hook": "^3.0.7",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
