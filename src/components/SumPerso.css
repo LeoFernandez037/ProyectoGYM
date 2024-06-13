@@ -1,0 +1,37 @@
+
+.imagn1{
+    width: 375px;
+    height: 285px;
+    display: flex;
+}
+.dscns{
+    width: 82.01px;
+    height: 76px;
+    display: flex;
+    border-radius: 20%;
+}
+.volv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11px;
+    gap: 25px;
+}
+.boton123{
+display: block;
+margin: auto;
+background-color: var(--Verde);
+border-radius: 9px;
+display: flex;
+width: 200px;
+height: 45px;
+color: var(--Primary);
+font-size: 19px;
+font-weight: bolder;
+justify-content: center;
+text-decoration: none !important;
+}
+.boton123:hover {
+    color: var(--Blanco);
+    text-decoration: none !important;
+    background-color: var(--Primary);
+}
