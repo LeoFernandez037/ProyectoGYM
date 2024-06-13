@@ -4,20 +4,39 @@ import "./Register.css";
 import Imagen1 from "../assets/Logo1.png";
 
 function Register() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Registrando:", { email, password, confirmPassword });
+    let _datos = {
+      nombre: "Novat@",
+      imagen:
+        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/242.jpg",
+      gmail: e.target.email.value,
+      contrasena: e.target.password.value,
+      rol: "cliente",
+      sexo: "Establecer",
+      estado: "activo",
+      desde: "",
+      hasta: "",
+      rutinas: "",
+      fechanac: "",
+    };
+
+    fetch("https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/users", {
+      method: "POST",
+      body: JSON.stringify(_datos),
+      headers: { "Content-type": "application/json; charset=UTF-8" },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json))
+      .catch((err) => console.log(err));
   };
+
   return (
     <div className="containerR">
       <div className="register-card">
         <div className="ImagenReg">
           <div className="register-header">
-            <Link to="/proyectoGYM" className="access">
+            <Link to="/ProyectoGYM" className="access">
               Acceso
             </Link>
             <Link to="/register" className="signup">
@@ -34,32 +53,16 @@ function Register() {
           </div>
         </div>
         <form className="register-form" onSubmit={handleSubmit}>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+          <input type="email" placeholder="Email" name="email" />
           <div className="line"></div>
-          <input
-            type="password"
-            placeholder="Contraseña"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <input type="password" placeholder="Contraseña" name="password" />
           <div className="line"></div>
           <input
             type="password"
             placeholder="Contraseña de nuevo"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
+            name="passwordAgain"
           />
-          <Link to="/home">
-            <button className="register-button">Registrarse</button>
-          </Link>
+          <button className="register-button">Registrarse</button>
         </form>
       </div>
     </div>

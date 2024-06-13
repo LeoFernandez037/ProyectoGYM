@@ -46,9 +46,11 @@ const Profile = () => {
                 <span className="flecha">➡</span>
               </Link>
             </li>
-            <p className="logout">
-              <a href="/">Cerrar sesión</a>
-            </p>
+            <Link to="/ProyectoGYM">
+              <p className="logout">
+                <a href="/">Cerrar sesión</a>
+              </p>
+            </Link>
           </ul>
         </nav>
       </div>
