@@ -52,6 +52,8 @@ h2 {
 .notifications-list {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    height: 600px;
 }
 
 .notification {
@@ -81,7 +83,7 @@ h2 {
 
 .tittleTime{
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
 }
 
 .notification p {

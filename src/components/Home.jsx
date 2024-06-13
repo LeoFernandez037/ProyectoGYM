@@ -26,11 +26,11 @@ function Home() {
     <div className="containerC">
       <div className="Casa-card">
         <div className="Cabeza">
-          <h1 class="rajdhani-bold">Hola Gabriela !</h1>
-          <p class="rajdhani-semibold">
+          <h1 className="rajdhani-bold">Hola Gabriela !</h1>
+          <p className="rajdhani-semibold">
             No te olvides que el día de hoy entrenas: <strong>PIERNA</strong>
           </p>
-          <h1 class="anuncios">Anuncios</h1>
+          <h1 className="anuncios">Anuncios</h1>
         </div>
         <Slider {...settings}>
           <CarouselItem>

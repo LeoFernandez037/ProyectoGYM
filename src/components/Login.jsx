@@ -37,7 +37,7 @@ function Login() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <line></line>
+            <div className="line"></div>
             <input
               type="password"
               placeholder="Contraseña"

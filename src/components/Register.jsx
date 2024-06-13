@@ -41,7 +41,7 @@ function Register() {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <line></line>
+          <div className="line"></div>
           <input
             type="password"
             placeholder="Contraseña"
@@ -49,7 +49,7 @@ function Register() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <line></line>
+          <div className="line"></div>
           <input
             type="password"
             placeholder="Contraseña de nuevo"
