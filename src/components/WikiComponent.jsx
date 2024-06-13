@@ -1,47 +1,44 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
-export default class WikiComponent extends Component {
-  constructor(props) {
-    super(props);
-    const { steps } = this.props;
-    const { select, selectReact } = steps;
-    this.state = {
-      select,
-      selectReact,
-      statusProgramacion: false,
-      detail: "",
-    };
-  }
+function WikiComponent({ steps }) {
+  const { select, selectReact } = steps;
+  const [statusProgramacion, setStatusProgramacion] = useState(false);
+  const [detail, setDetail] = useState("");
 
-  componentDidMount() {
-    if (this.state.select.value === "n") {
-      this.setState({
-        statusProgramacion: true,
-      });
+  useEffect(() => {
+    if (select.value === "n") {
+      setStatusProgramacion(true);
     }
-
-    if (this.state.select.value === "y") {
-      this.state.detail = this.state.selectReact.value;
+    if (select.value === "y") {
+      setDetail(selectReact.value);
     }
-  }
-  render() {
-    return (
+  }, [select, selectReact]);
+
+  return (
+    <div>
+      {statusProgramacion ? (
         <div>
-        {this.state.statusProgramacion ? (
-          <div>
-            <a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n" target="_blank">
-              ¿Qué es la programación?
-            </a>
-          </div>
-        ) : (
-          <div>
-            <a href={"https://es.wikipedia.org/wiki/React#" + this.state.detail} target="_blank">
-              {this.state.detail} React
-            </a>
-          </div>
-        )}
-      </div>
-      
-    );
-  }
+          <a
+            href="https://es.wikipedia.org/wiki/Programaci%C3%B3n"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ¿Qué es la programación?
+          </a>
+        </div>
+      ) : (
+        <div>
+          <a
+            href={"https://es.wikipedia.org/wiki/React#" + detail}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {detail} React
+          </a>
+        </div>
+      )}
+    </div>
+  );
 }
+
+export default WikiComponent;
