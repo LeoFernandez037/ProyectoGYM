@@ -14,7 +14,6 @@ const ExerciseDetailPage = ({ exercise, onBack }) => {
     <div className="exercise-detail-page">
       <h1>{exercise.nombreE}</h1>
       <Image src={exercise.imagen} alt={exercise.nombreE} />
-      <p>{exercise.InformacionE}</p>
       <div className="exercise-info-detail">
         <h2>Ejercicio de {exercise.musculo}</h2>
         <p>{exercise.InformacionE}</p>

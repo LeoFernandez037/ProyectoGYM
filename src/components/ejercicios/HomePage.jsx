@@ -13,6 +13,9 @@ const HomePage = () => {
         "Ejercicios Pecho": data.filter((e) => e.musculo === "Pecho"),
         "Ejercicios Pierna": data.filter((e) => e.musculo === "Pierna"),
         "Ejercicios Gluteos": data.filter((e) => e.musculo === "Glúteos"),
+        "Ejercicios Espalda": data.filter((e) => e.musculo === "Espalda"),
+        "Ejercicios Brazos": data.filter((e) => e.musculo === "Brazo"),
+        "Ejercicios Cardio": data.filter((e) => e.musculo === "Cardio"),
       };
       const formattedSections = Object.keys(groupedData).map((key) => ({
         title: key,
