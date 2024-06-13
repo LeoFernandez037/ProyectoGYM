@@ -7,7 +7,7 @@ const Profile = () => {
     <div className="profile-container">
       <div className="profile-card">
         <div className="profile-header">
-          <h1 class="rajdhani-bold">Perfil</h1>
+          <h1 className="rajdhani-bold">Perfil</h1>
         </div>
         <div className="profile-info">
           <div className="Perfil">
@@ -24,7 +24,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-name">
-          <holi>Gabriela Esprella</holi>
+          <h1>Gabriela Esprella</h1>
         </div>
         <nav className="profile-nav">
           <ul>
@@ -46,9 +46,11 @@ const Profile = () => {
                 <span className="flecha">➡</span>
               </Link>
             </li>
-            <p className="logout">
-              <a href="/">Cerrar sesión</a>
-            </p>
+            <Link to="/ProyectoGYM">
+              <p className="logout">
+                <a href="/">Cerrar sesión</a>
+              </p>
+            </Link>
           </ul>
         </nav>
       </div>

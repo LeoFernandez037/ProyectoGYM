@@ -6,7 +6,7 @@ function Informacion() {
   return (
     <div className="containerI">
       <div className="inf-card">
-        <h1 class="rajdhani-bold">Información</h1>
+        <h1 className="rajdhani-bold">Información</h1>
         <div className="Tarjeta">
           <div className="buttonContainer">
             <Link to="/historial">

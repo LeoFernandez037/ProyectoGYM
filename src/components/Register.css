@@ -82,7 +82,7 @@ h1{
     cursor: pointer;
 }
 
-line{
+.line{
     width: 280px;
     height: 0px;
     border: 1px solid var(--Plomo);
