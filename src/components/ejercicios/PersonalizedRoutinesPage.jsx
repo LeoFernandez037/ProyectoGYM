@@ -36,7 +36,7 @@ const PersonalizedRoutinesPage = () => {
           addedExercises.map((exercise, index) => (
             <div key={index} className="exercise-card">
               <img src={exercise.imagen} alt={exercise.nombreG} className="exercise-image" />
-              <h2>{exercise.nombreG}</h2>
+              <h2>{exercise.nombreG}</h2> {/* Asegúrate de que se usa nombreG */}
               <p>Tipo de músculo: {exercise.musculog}</p>
               <p>Cantidad: {exercise.numeroE}</p>
             </div>

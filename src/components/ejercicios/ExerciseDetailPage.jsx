@@ -15,7 +15,7 @@ const ExerciseDetailPage = ({ exercise, user, onBack }) => {
   const handleAdd = () => {
     const newExercise = {
       musculog: exercise.musculo,
-      nombreG: exercise.nombreE,
+      nombreG: exercise.nombreE, // Ajuste aquí para usar nombreE en lugar de nombreG
       imagen: exercise.imagen,
       usuario: user,
       numeroE: quantity,
