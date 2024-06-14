@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Slider from "react-slick";
-
 import Imagen1 from "../assets/Carrucel1.jpg";
 import Imagen2 from "../assets/Carrucel2.jpg";
 import Imagen3 from "../assets/Carrucel3.jpg";
 import "./Home.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 function Home() {
   const settings = {
@@ -26,7 +26,7 @@ function Home() {
     <div className="containerC">
       <div className="Casa-card">
         <div className="Cabeza">
-          <h1 className="rajdhani-bold">Hola Gabriela !</h1>
+          <h1 className="rajdhani-bold">Hola {cookies.get("nombre")} !</h1>
           <p className="rajdhani-semibold">
             No te olvides que el día de hoy entrenas: <strong>PIERNA</strong>
           </p>

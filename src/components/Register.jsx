@@ -4,7 +4,7 @@ import "./Register.css";
 import Imagen1 from "../assets/Logo1.png";
 
 function Register() {
-  const handleSubmit = async (e) => {
+  const handleSubmitLog = async (e) => {
     e.preventDefault();
     let _datos = {
       nombre: "Novat@",
@@ -24,7 +24,7 @@ function Register() {
     fetch("https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/users", {
       method: "POST",
       body: JSON.stringify(_datos),
-      headers: { "Content-type": "application/json; charset=UTF-8" },
+      headers: { "Content-type": "application/json;" },
     })
       .then((response) => response.json())
       .then((json) => console.log(json))
@@ -36,7 +36,7 @@ function Register() {
       <div className="register-card">
         <div className="ImagenReg">
           <div className="register-header">
-            <Link to="/ProyectoGYM" className="access">
+            <Link to="/" className="access">
               Acceso
             </Link>
             <Link to="/register" className="signup">
@@ -52,7 +52,7 @@ function Register() {
             </p>
           </div>
         </div>
-        <form className="register-form" onSubmit={handleSubmit}>
+        <form className="register-form" onSubmit={handleSubmitLog}>
           <input type="email" placeholder="Email" name="email" />
           <div className="line"></div>
           <input type="password" placeholder="Contraseña" name="password" />

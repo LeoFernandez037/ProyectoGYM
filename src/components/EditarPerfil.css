@@ -104,7 +104,7 @@ input {
     background-color: var(--Verde);
     color: var(--Negro);
 }
-line{
+.line{
     width: 280px;
     height: 0px;
     border: 1px solid var(--Plomo);
