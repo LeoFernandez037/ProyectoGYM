@@ -6,8 +6,6 @@ rajdhani-bold{
     margin-top: 10px;   
 }
 
-
-
 .chat-container {
     display: flex;
     justify-content: space-between;
@@ -17,8 +15,8 @@ rajdhani-bold{
     width: 370px;
     background-color: var(--PlomoOscuro);
     font-family: "Rajdhani", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-weight: 500;
+    font-style: normal;
   }
   
   .chat-response {
@@ -36,26 +34,26 @@ rajdhani-bold{
   }
   
   .chat-form-text {
-    width: 100%;
+    width: 240px;
+    margin-top: 20px;
     height: 50px;
-    padding: 10px;
     background-color: var(--Blanco);
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin: 2em;
   }
   
   .chat-form-button {
+    margin-top: 20px;
+    margin-left: 5px;
       background-color: var(--Verde);
       border: none;
       color: black;
-      padding: 15px 32px;
+      padding: 22px 22px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 700;
-      margin: 4px 2px;
       cursor: pointer;
       border-radius: 5px;
   }
@@ -68,7 +66,30 @@ rajdhani-bold{
     text-align: justify;
   }
   
-  .role {
+  .chat-container h2{
     font-weight: bold;
+    color:var(--Verde);
   }
+  
+  .chat-responseTu{
+    display: flex; 
+    margin-left: 30px;
+  }
+
+  .chat-responseTu .chat-message{
+    margin-left: 0px;
+  }
+  .chat-responsemodel{
+    display: flex;
+
+  }
+
+  .chat-responsemodel .chat-message{
+    margin-left: 0px;
+  }
+
+  
+    
+  
+
   

@@ -5,6 +5,8 @@ import {
   HarmCategory,
 } from "@google/generative-ai";
 import "./Chat.style.css";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -28,7 +30,7 @@ const generationConfig = {
 const Nutricion = () => {
   const [chatHistory, setChatHistory] = useState([]);
   const bottomRef = useRef(null);
-  const [message, setMessage] = useState("Ingrese su requerimiento");
+  const [message, setMessage] = useState("");
   const [isLoading, setLoading] = useState(false);
 
   const model = genAI.getGenerativeModel({
@@ -55,11 +57,14 @@ const Nutricion = () => {
 
   const fetchData = async () => {
     if (!isNutritionRelated(message)) {
-      addMessageToHistory("model", "Lo siento, solo puedo responder preguntas relacionadas con nutrición.");
+      addMessageToHistory(
+        "model",
+        "Lo siento, solo puedo responder preguntas relacionadas con nutrición."
+      );
       return;
     }
     setLoading(true);
-    addMessageToHistory("user", message);
+    addMessageToHistory("Tu", message);
     const result = await chat.sendMessage(message);
     const response = await result.response;
 
@@ -69,17 +74,32 @@ const Nutricion = () => {
       text
         .replace(/\n/g, "<br />")
         .replace(/"/g, "")
-        .replace(/\(([^)]+)\)/g, "<h3>$1</h3>") 
+        .replace(/\(([^)]+)\)/g, "<h3>$1</h3>")
     );
-    setMessage("");
+    setMessage("HI");
     setLoading(false);
   };
 
   const isNutritionRelated = (message) => {
     const nutritionKeywords = [
-      "nutrición", "nutricion", "alimentación", "dietas", "comida", "nutrientes",
-      "calorías", "proteínas", "carbohidratos", "grasas", "vitaminas",
-      "minerales", "salud", "peso", "alimenticio", "dieta", "comer","Saludo"
+      "nutrición",
+      "nutricion",
+      "alimentación",
+      "dietas",
+      "comida",
+      "nutrientes",
+      "calorías",
+      "proteínas",
+      "carbohidratos",
+      "grasas",
+      "vitaminas",
+      "minerales",
+      "salud",
+      "peso",
+      "alimenticio",
+      "dieta",
+      "comer",
+      "Saludo",
     ];
     return nutritionKeywords.some((keyword) =>
       message.toLowerCase().includes(keyword)
@@ -98,16 +118,14 @@ const Nutricion = () => {
   return (
     <div className="container">
       <h1 className="rajdhani-bold">Nutricion</h1>
-      <p className="rajdhani-light">
-        Hola soy la nutria nutriologa
-      </p>
+      <p className="rajdhani-light">Hola soy la nutria nutriologa</p>
 
       <div className="chat-container">
         {chatHistory &&
           chatHistory?.map(({ parts, role }, index) => (
-            <div key={index} className={`chat-response ${role}`}>
+            <div key={index} className={`chat-response${role}`}>
               <div className="role">
-                {role === "user" ? <h2>Usuario</h2> : <h2>Nutria:</h2>}
+                {role === "Tu" ? <h2>Tu:</h2> : <h2>Nutria:</h2>}
                 {}
               </div>
               <div
@@ -116,8 +134,8 @@ const Nutricion = () => {
               />
             </div>
           ))}
+        <div ref={bottomRef} />
       </div>
-
       <form className="chat-form" onSubmit={handleSubmit}>
         <textarea
           className="chat-form-text"
@@ -129,8 +147,6 @@ const Nutricion = () => {
           {isLoading ? "Cargando..." : "ENVIAR"}
         </button>
       </form>
-
-      <div ref={bottomRef} />
     </div>
   );
 };
