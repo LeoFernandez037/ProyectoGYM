@@ -13,6 +13,7 @@ import Historial from '../components/Historial.jsx';
 import Profile from '../components/Profile.jsx';
 import EditarPerfil from '../components/EditarPerfil.jsx';
 import MainChatBot from '../components/MainChatBot.jsx';
+import MusicPlayer from '../components/MusicPlayer.jsx';
 function Navegacion() {
     return (
         <div className="navContainer">
@@ -29,6 +30,7 @@ function Navegacion() {
                     <Route path="/ediprofile" element={<EditarPerfil/>} />
                     <Route path="/sumperso" element={<SumPerso/>} />
                     <Route path="/chat" element={<MainChatBot/>} />
+                    <Route path="/music" element={<MusicPlayer/>} />
                     <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} /> 
                 </Routes>
                 <BottomNav />

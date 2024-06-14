@@ -17,7 +17,7 @@ function Informacion() {
           <Link to="/chat">
             <button className="inf-button">Dieta</button>
           </Link>
-          <Link to="/casa">
+          <Link to="/music">
             <button className="inf-button">Dieta de masa y volumen</button>
           </Link>
           <Link to="/casa">
