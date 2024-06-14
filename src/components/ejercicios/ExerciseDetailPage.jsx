@@ -1,13 +1,38 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Image from './Image';
-import Button1 from './Button1';
+import Button from './Button1';
 import './ExerciseDetailPage.css';
 
-const ExerciseDetailPage = ({ exercise, onBack }) => {
+const ExerciseDetailPage = ({ exercise, user, onBack }) => {
   const [quantity, setQuantity] = useState(1);
+  const navigate = useNavigate();
 
   const handleQuantityChange = (e) => {
     setQuantity(e.target.value);
+  };
+
+  const handleAdd = () => {
+    const newExercise = {
+      musculog: exercise.musculo,
+      nombreG: exercise.nombreE, // Ajuste aquí para usar nombreE en lugar de nombreG
+      imagen: exercise.imagen,
+      usuario: user,
+      numeroE: quantity,
+    };
+
+    fetch('https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/EjercicioG', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newExercise),
+    })
+      .then(response => response.json())
+      .then(data => {
+        navigate('/personalized-routines', { state: { addedExercise: data } }); // Redirige y pasa el ejercicio agregado
+      })
+      .catch(error => console.error('Error saving exercise:', error));
   };
 
   return (
@@ -29,8 +54,8 @@ const ExerciseDetailPage = ({ exercise, onBack }) => {
           />
         </div>
         <div className="buttons">
-          <Button1 className="add-button">Agregar</Button1>
-          <Button1 className="back-button" onClick={onBack}>Volver</Button1>
+          <Button className="add-button" onClick={handleAdd}>Agregar</Button>
+          <Button className="back-button" onClick={onBack}>Volver</Button>
         </div>
       </div>
     </div>

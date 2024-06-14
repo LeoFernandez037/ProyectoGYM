@@ -1,92 +1,91 @@
 .exercise-detail-page {
-    padding: 20px;
-    background-color: #1a1a1a;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #fff;
-  }
-  
-  .exercise-detail-page h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #b8ff02;
-  }
-  
-  .exercise-detail-page p {
-    font-size: 18px;
-    color: #fff;
-  }
-  
-  .exercise-detail-page img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .exercise-info-detail {
-    font-size: 16px;
-    color: #fff;
-  }
-  
-  .exercise-info-detail h2 {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #b8ff02;
-  }
-  
-  .exercise-info-detail p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #fff;
-  }
-  
-  .quantity-selector {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .quantity-selector label {
-    display: block;
-    margin-bottom: 10px;
-    color: #b8ff02;
-  }
-  
-  .quantity-selector input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    background-color: #333;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .add-button {
-    background-color: #b8ff02;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 48%;
-  }
-  
-  .back-button {
-    background-color: #b8ff02;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 48%;
-  }
-  
+  padding: 20px;
+  background-color: #1a1a1a;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.exercise-detail-page h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #b8ff02;
+}
+
+.exercise-detail-page p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.exercise-detail-page img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.exercise-info-detail {
+  font-size: 16px;
+  color: #fff;
+}
+
+.exercise-info-detail h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #b8ff02;
+}
+
+.exercise-info-detail p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.quantity-selector {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quantity-selector label {
+  display: block;
+  margin-bottom: 10px;
+  color: #b8ff02;
+}
+
+.quantity-selector input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  background-color: #b8ff02;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+}
+
+.back-button {
+  background-color: #b8ff02;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+}

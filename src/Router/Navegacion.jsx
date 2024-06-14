@@ -13,6 +13,8 @@ import Calendario from "../components/Calendario.jsx";
 import SocialPage from "../components/TarjetaSocial/SocialPage";
 import HomePage from "../components/ejercicios/HomePage";
 import ExercisePage from "../components/InfoTar/ExercisePage";
+import ExerciseDetailPage from "../components/ejercicios/ExerciseDetailPage.jsx";
+import PersonalizedRoutinesPage from "../components/ejercicios/PersonalizedRoutinesPage.jsx";
 import MenuInter from "../components/Entrenador/MenuInter.jsx";
 import Aprendiz from "../components/Entrenador/Aprendiz.jsx";
 import Cronograma from "../components/Entrenador/Cronograma.jsx";
@@ -39,6 +41,8 @@ function Navegacion() {
           <Route path="/social" element={<SocialPage />} />
           <Route path="/rutina" element={<HomePage />} />
           <Route path="/ejercicio" element={<ExercisePage />} />
+          <Route path="/exercise-detail" element={<ExerciseDetailPage />} />
+          <Route path="/personalized-routines" element={<PersonalizedRoutinesPage />} />
           <Route path="/menuIn" element={<MenuInter />} />
           <Route path="/aprend" element={<Aprendiz />} />
           <Route path="/crono" element={<Cronograma />} />
