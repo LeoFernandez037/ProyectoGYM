@@ -1,6 +1,6 @@
-import React from 'react';
-import Slider from 'react-slick';
-import ExerciseCard from './ExerciseCard6';
+import React from "react";
+import Slider from "react-slick";
+import ExerciseCard from "./ExerciseCard6";
 
 
 const ExerciseSection6 = ({ title, exercises,onCardClick }) => {
@@ -30,5 +30,4 @@ const ExerciseSection6 = ({ title, exercises,onCardClick }) => {
       </div>
     );
   };
-  
-  export default ExerciseSection6;
+export default ExerciseSection6;
