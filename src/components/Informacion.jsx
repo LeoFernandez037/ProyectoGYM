@@ -6,7 +6,7 @@ function Informacion() {
   return (
     <div className="containerI">
       <div className="inf-card">
-        <h1 class="rajdhani-bold">Información</h1>
+        <h1 className="rajdhani-bold">Información</h1>
         <div className="Tarjeta">
           <div className="buttonContainer">
             <Link to="/historial">
@@ -15,7 +15,7 @@ function Informacion() {
             <h2>Etapas de aumentar peso</h2>
           </div>
           <div className="buttonContainer">
-            <Link to="/rutina">
+            <Link to="/nutricion">
               <button className="inf-button">Dieta</button>
             </Link>
             <h2>Dieta de masa y volumen</h2>

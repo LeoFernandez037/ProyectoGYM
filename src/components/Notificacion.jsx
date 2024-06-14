@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { fetchNotis } from "./ejercicios/api";
 import "./Notificacion.css";
+import Notification from "./Notification";
 
 function Notificacion() {
   const [selectedTab, setSelectedTab] = useState("Promociones");
   const handleTabChange = (tab) => {
     setSelectedTab(tab);
   };
+
+  useEffect(() => {
+    fetchNotis().then((data) => {
+      const groupedDataNotis = {
+        Nuevo: data.filter((e) => e.tipo === "Nuevo"),
+        Promociones: data.filter((e) => e.tipo === "Promociones"),
+      };
+      setNotis(groupedDataNotis);
+    });
+  }, []);
+  const [notis, setNotis] = useState([]);
   return (
     <div className="notifications">
       <div className="not-card">
-        <h1 class="rajdhani-bold">Notificaciones</h1>
+        <h1 className="rajdhani-bold">Notificaciones</h1>
         <div className="tabs">
           <button
             className={`tab ${selectedTab === "Nuevo" ? "active" : ""}`}
@@ -33,27 +46,46 @@ function Notificacion() {
         <div className="notifications-list">
           {selectedTab === "Promociones" && (
             <>
-              <div className="notification">
-                <div className="tittleTime">
-                  <h3>Especial año nuevo</h3>
-                  <span className="time">9:45 AM</span>
-                </div>
-                <p>
-                  Inscríbete en enero y obtén un 40% de descuento en tus
-                  primeros tres meses de membresía.
-                </p>
-              </div>
-              <div className="notification">
-                <div className="tittleTime">
-                  <h3>Promocion</h3>
-                  <span className="time">9:38 AM</span>
-                </div>
-                <p>
-                  Esta semana, todos los miércoles son Día de Invitado en
-                  nuestro gimnasio. ¡Trae a un amigo y ambos recibirán un pase
-                  de un día GRATIS!
-                </p>
-              </div>
+              {notis.Promociones?.map((notificacion) => (
+                <Notification
+                  key={notificacion.id}
+                  titulo={notificacion.tittle}
+                  contenido={notificacion.content}
+                  hora={notificacion.createdAt}
+                ></Notification>
+              ))}
+            </>
+          )}
+          {selectedTab === "Nuevo" && (
+            <>
+              {notis.Nuevo?.map((notificacion) => (
+                <Notification
+                  key={notificacion.id}
+                  titulo={notificacion.tittle}
+                  contenido={notificacion.content}
+                  hora={notificacion.createdAt}
+                ></Notification>
+              ))}
+            </>
+          )}
+          {selectedTab === "Todo" && (
+            <>
+              {notis.Nuevo?.map((notificacion) => (
+                <Notification
+                  key={notificacion.id}
+                  titulo={notificacion.tittle}
+                  contenido={notificacion.content}
+                  hora={notificacion.createdAt}
+                ></Notification>
+              ))}
+              {notis.Promociones?.map((notificacion) => (
+                <Notification
+                  key={notificacion.id}
+                  titulo={notificacion.tittle}
+                  contenido={notificacion.content}
+                  hora={notificacion.createdAt}
+                ></Notification>
+              ))}
             </>
           )}
         </div>

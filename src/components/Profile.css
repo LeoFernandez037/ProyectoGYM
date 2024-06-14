@@ -28,7 +28,7 @@
 }
 
 .profile-info > * + * {
-    margin-left: 200px;
+    margin-left: 180px;
 }
 
 .profile-pic {
@@ -48,6 +48,8 @@
 
 .titulo{
     color: #FFBB55;
+    font-weight: semi-bold;
+    font-size: large;
 }
 
 .highlight {

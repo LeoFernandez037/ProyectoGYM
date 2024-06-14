@@ -1,9 +1,9 @@
-import React from 'react';
-import Slider from 'react-slick';
-import ExerciseCard from './ExerciseCard6';
+import React from "react";
+import Slider from "react-slick";
+import ExerciseCard from "./ExerciseCard6";
 
 
-const ExerciseSection6 = ({ title, exercises }) => {
+const ExerciseSection6 = ({ title, exercises,onCardClick }) => {
     const settings = {
       dots: true,
       infinite: true,
@@ -23,11 +23,11 @@ const ExerciseSection6 = ({ title, exercises }) => {
               musculo={exercise.musculo}
               InformacionE={exercise.InformacionE}
               imagen={exercise.imagen}
+              onClick={() => onCardClick(exercise)}
             />
           ))}
         </Slider>
       </div>
     );
   };
-  
-  export default ExerciseSection6;
+export default ExerciseSection6;

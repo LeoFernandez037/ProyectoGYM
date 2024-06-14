@@ -19,6 +19,8 @@ import Cronograma from "../components/Entrenador/Cronograma.jsx";
 import Membresia from "../components/Entrenador/Membresia.jsx";
 import NotiEntre from "../components/Entrenador/NotiEntre.jsx";
 import EnviarNoti from "../components/Entrenador/EnviarNoti.jsx";
+import Descanso from "../components/Descanso.jsx";
+import Nutricion from "../components/Chatbot/Nutricion.jsx";
 
 function Navegacion() {
   return (
@@ -42,6 +44,8 @@ function Navegacion() {
           <Route path="/membr" element={<Membresia />} />
           <Route path="/notiEnt" element={<NotiEntre />} />
           <Route path="/EnviNot" element={<EnviarNoti/>} />
+          <Route path="/descanso" element={<Descanso />} />
+          <Route path="/nutricion" element={<Nutricion />} />
           <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} />
         </Routes>
         <BottomNav />

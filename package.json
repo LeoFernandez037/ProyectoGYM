@@ -12,23 +12,31 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@better-scroll/wheel": "^2.5.1",
     "@fortawesome/fontawesome-free": "^6.5.2",
+    "@google/generative-ai": "^0.12.0",
+    "dialogflow": "^1.2.0",
     "react": "^18.2.0",
+    "react-chatbot-kit": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
+    "react-simple-chatbot": "^0.6.1",
+    "react-simple-wheel-picker": "^1.2.0",
     "react-slick": "^0.30.2",
     "react-timer-hook": "^3.0.7",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "universal-cookie": "^7.1.4",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0"
+    "vite": "^5.2.13"
   }
 }

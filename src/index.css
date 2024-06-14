@@ -10,7 +10,8 @@
   --Negro: rgba(0, 0, 0, 1);
   --Primary: rgb(27, 27, 27);
   --PlomoOscuro: rgba(44, 44, 46, 1);
-  --Plomo: rgb(84, 84, 84);
+  --Plomo:rgb(84,84,84);
+  --Botones: #2C2C2E;
 }
 
 .rajdhani-light {
@@ -64,10 +65,20 @@ body {
   text-align: left;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:50px;
 }
 h2{
   color: var(--Blanco);
 }
+
+.exercise-header{
+  display: flex;
+
+}
+
 .exercise-card {
   background-color: var(--Primary);
   color: var(--Blanco);
@@ -90,6 +101,13 @@ h2{
   color: var(--Verde);
 }
 
+.buttontranspartent{
+  background-color: transparent !important;
+  border: 0px;
+  color: var(--Blanco);
+  font-size: 35px;
+  margin-right: 30px;
+}
 .exercise-image {
   width: 100%;
   border-radius: 10px;
@@ -139,6 +157,7 @@ h2{
 .exercise-muscle-group{
   color: var(--Verde);
 }
+
 .avatar {
   width: 50px;
   height: 50px;
@@ -164,6 +183,8 @@ h2{
 .user-list {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  height: 650px;
 }
 
 
@@ -182,7 +203,7 @@ h2{
 }
 
 .social-page h2 {
-  color: var(--Plomo);
+  color: var(--Blanco);
   font-family: "Rajdhani", sans-serif;
   font-weight: 400;
 }
