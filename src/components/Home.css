@@ -2,9 +2,10 @@
 
 .slick-dots li.slick-active button:before {
     opacity: 1 !important;
-    color: var(--Verde) !important; 
+    color: var(--Verde) !important;
     font-size: 26px !important;
 }
+
 .slick-dots li button:before {
     padding-top: 10px;
     font-family: 'slick';
@@ -21,25 +22,27 @@
     color: black !important;
     -webkit-font-smoothing: antialiased;
 }
+
 .containerC {
     display: flex;
     color: var(--Blanco);
 }
 
-h1{
+h1 {
     margin-top: 0px !important;
 }
-.rajdhani-semibold{
+
+.rajdhani-semibold {
     padding-top: 40px;
 }
 
-.anuncios{
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size:40px;
-  background-color: var(--PlomoOscuro);
-  border-radius: 10px;
+.anuncios {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    background-color: var(--PlomoOscuro);
+    border-radius: 10px;
 }
 
 .Casa-card {
@@ -48,13 +51,17 @@ h1{
     width: 375px;
     height: 748px;
 }
+
 .Cabeza {
     padding-top: 26px;
     font-size: 25px;
 }
-.cabeza,p {
+
+.cabeza,
+p {
     margin: 5px 0 20px;
 }
+
 strong {
     color: var(--Verde);
 }
