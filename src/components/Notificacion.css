@@ -64,7 +64,7 @@ h2 {
     font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     font-style: normal;
-    width: 335px;
+    width: 320px;
 }
 
 .notification .time {
@@ -90,4 +90,8 @@ h2 {
     margin-top: 5px;
     font-size: 14px;
     color: #ccc;
+}
+
+.time{
+    background-color: transparent !important;
 }

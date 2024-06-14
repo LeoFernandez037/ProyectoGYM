@@ -1,6 +1,7 @@
 .music-player {
-    max-width: 800px;
+    max-width: 375px;
     margin: 0 auto;
+    height: 600px;
     padding: 0px;
     font-weight: 800;
     font-family: "Rajdhani", sans-serif;
@@ -9,6 +10,7 @@
     font-size: 39px;
     color:var(--Verde);
     font-weight: 800;
+    margin-top: 20px;
     font-family: "Rajdhani", sans-serif;
   }
   .navigation-bar {
@@ -40,6 +42,7 @@
   
   .playlist {
     margin-top: 20px;
+    min-height: max-content !important  ;
   }
   
   .playlist h2 {
@@ -68,6 +71,7 @@
   .playlist ul {
     list-style-type: none;
     padding: 0;
+    width: 250px;
   }
   
   .playlist ul li {
@@ -93,3 +97,39 @@
     background-color: #ff1a1a;
   }
   
+  .player{
+    border:0px;
+  }
+
+  .botones5{
+    background-color: var(--PlomoOscuro);
+    margin-top: 5px;
+    color: var(--Blanco);
+    }
+
+  .controls{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .playlist-container{
+    background-color: var(--PlomoOscuro);
+    border: 0px;
+    width: 340px;
+    height: 350px;
+    border-radius: 5px;
+  }
+
+  .file-label{
+    background-color: var(--Plomo);
+  }
+
+  .playlist li{
+    background-color: var(--Plomo);
+    border: 0px;
+  }
+  .song-title{
+    background-color: var(--Plomo);
+    width: 200px;
+    color: var(--Blanco);
+  }

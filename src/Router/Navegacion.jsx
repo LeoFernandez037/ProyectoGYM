@@ -21,6 +21,7 @@ import NotiEntre from "../components/Entrenador/NotiEntre.jsx";
 import EnviarNoti from "../components/Entrenador/EnviarNoti.jsx";
 import Descanso from "../components/Descanso.jsx";
 import Nutricion from "../components/Chatbot/Nutricion.jsx";
+import MusicPlayer from "../components/MusicPlayer";
 
 function Navegacion() {
   return (
@@ -43,9 +44,10 @@ function Navegacion() {
           <Route path="/crono" element={<Cronograma />} />
           <Route path="/membr" element={<Membresia />} />
           <Route path="/notiEnt" element={<NotiEntre />} />
-          <Route path="/EnviNot" element={<EnviarNoti/>} />
+          <Route path="/EnviNot" element={<EnviarNoti />} />
           <Route path="/descanso" element={<Descanso />} />
           <Route path="/nutricion" element={<Nutricion />} />
+          <Route path="/music" element={<MusicPlayer />} />
           <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} />
         </Routes>
         <BottomNav />
