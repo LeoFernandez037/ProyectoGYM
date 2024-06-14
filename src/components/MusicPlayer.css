@@ -1,0 +1,95 @@
+.music-player {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    font-weight: 800;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .Titulito1{
+    font-size: 39px;
+    color:var(--Verde);
+    font-weight: 800;
+    font-family: "Rajdhani", sans-serif;
+  }
+  .navigation-bar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation-bar ul li {
+    float: left;
+  }
+  
+  .navigation-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navigation-bar1 ul li a:hover {
+    background-color: #111;
+  }
+  
+  .playlist {
+    margin-top: 20px;
+  }
+  
+  .playlist h2 {
+    color: #333;
+  }
+  
+  .playlist .file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: green; /* Color verde para el texto */
+    font-weight: bold;
+  }
+  
+  .playlist .file-label:hover {
+    background-color: #ddd;
+  }
+  
+  .playlist input[type="file"] {
+    display: none;
+  }
+  
+  .playlist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .playlist ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .playlist ul li button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .playlist ul li button:hover {
+    background-color: #ff1a1a;
+  }
+  
