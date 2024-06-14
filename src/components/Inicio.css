@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
 }
 
 .home-card {

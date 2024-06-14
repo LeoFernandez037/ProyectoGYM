@@ -1,0 +1,90 @@
+.gimnasio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Blanco);
+}
+
+.ubi-card {
+    margin-top: 15px;
+    background: var(--Primary);
+    border-radius: 8px;
+    width: 375px;
+    height: 812px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubi-card h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.ubi-card h3{
+    line-height: 1;
+    margin-left: 30px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ubi-card p{
+    display: flex;
+    line-height: 1;
+    margin-left: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.mapa-imagen {
+    max-width: 70%;
+}
+
+.informacion {
+    font-size: 14px;
+}
+
+.imagenes-equipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.imagenes-equipos img {
+    width: 100%;
+    height: auto;
+}
+
+.contacto {
+    margin: 5px ;
+}
+
+.contacto a {
+    color: var(--Blanco);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+.volver-btn {
+    background-color: var(--Verde);
+    color: var(--Negro);
+    padding: 16px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.volver-btn:hover {
+    background-color: var(--Blanco);
+}

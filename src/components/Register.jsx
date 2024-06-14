@@ -1,69 +1,72 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Register.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Register.css";
 import Imagen1 from "../assets/Logo1.png";
 
 function Register() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
+  const handleSubmitLog = async (e) => {
+    e.preventDefault();
+    let _datos = {
+      nombre: "Novat@",
+      imagen:
+        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/242.jpg",
+      gmail: e.target.email.value,
+      contrasena: e.target.password.value,
+      rol: "cliente",
+      sexo: "Establecer",
+      estado: "activo",
+      desde: "",
+      hasta: "",
+      rutinas: "",
+      fechanac: "",
+    };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Registrando:', { email, password, confirmPassword });
-    }
-    return (
-        <div className="containerR">
-            <div className="register-card">
-                <div className="ImagenReg">
-                    <div className="register-header">
-                        <Link to="/login" className="access">Acceso</Link>
-                        <Link to="/register" className="signup">Inscribirse</Link>
-                        <img className="Logo" src={Imagen1} alt="Logo de del GYM" />
-                    </div>
-                    <div className="welcome-message">
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <h1>Bienvenido novato,</h1>
-                        <p>Ingrese su información a continuación o esta será corroborada por el administrador del gimnasio</p>
-                    </div>
-                </div>
-                <br />
-                <form className="register-form" onSubmit={handleSubmit}>
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                    <input
-                        type="password"
-                        placeholder="Contraseña"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                    <input
-                        type="password"
-                        placeholder="Contraseña de nuevo"
-                        value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
-                        required
-                    />
-                    <Link to="/home">
-                        <button className="register-button">Registrarse</button>
-                    </Link>
-                </form>
-            </div>
+    fetch("https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/users", {
+      method: "POST",
+      body: JSON.stringify(_datos),
+      headers: { "Content-type": "application/json;" },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json))
+      .catch((err) => console.log(err));
+  };
+
+  return (
+    <div className="containerR">
+      <div className="register-card">
+        <div className="ImagenReg">
+          <div className="register-header">
+            <Link to="/" className="access">
+              Acceso
+            </Link>
+            <Link to="/register" className="signup">
+              Inscribirse
+            </Link>
+            <img className="Logo" src={Imagen1} alt="Logo de del GYM" />
+          </div>
+          <div className="welcome-message">
+            <h1>Bienvenido</h1>
+            <p>
+              Ingrese su información a continuación, esta será corroborada por
+              el administrador del gimnasio
+            </p>
+          </div>
         </div>
-    )
+        <form className="register-form" onSubmit={handleSubmitLog}>
+          <input type="email" placeholder="Email" name="email" />
+          <div className="line"></div>
+          <input type="password" placeholder="Contraseña" name="password" />
+          <div className="line"></div>
+          <input
+            type="password"
+            placeholder="Contraseña de nuevo"
+            name="passwordAgain"
+          />
+          <button className="register-button">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
-export default Register
+export default Register;

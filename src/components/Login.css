@@ -9,6 +9,9 @@
     border-radius: 8px;
     width: 375px;
     height: 812px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .ImagenLog {
@@ -16,14 +19,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 550px;
+    height: 540px;
 }
 
 .login-header {
     display: flex;
+    width: 320px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 14px;
+    padding: 15px 38px;
 }
 
 .Logo {
@@ -35,16 +39,17 @@
 .Mensaje {
     text-align: center;
     margin-bottom: 20px;
-    color: var(--Verde);
+    color: var(--Blanco);
     line-height: 1.5;
     font-size: 20px;
+    margin-top:340px;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding-top: 20px;
 }
 
 .login-form input {
@@ -57,6 +62,7 @@
 }
 
 .login-button {
+    margin-top: 20px;
     background-color: var(--Verde);
     color: var(--Negro);
     padding: 16px;
@@ -64,4 +70,10 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.line{
+    width: 280px;
+    height: 0px;
+    border: 1px solid var(--Plomo);
 }

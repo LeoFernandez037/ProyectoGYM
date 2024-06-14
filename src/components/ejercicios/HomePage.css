@@ -1,0 +1,28 @@
+.homepage{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.exercise-template{
+    width: 375px;
+    height: 547px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0 !important;
+    color: var(--Verde) !important; 
+}
+.slick-dots li button:before {
+    opacity: 0 !important;
+}
+
+.ejercicio{
+    background-color: var(--Verde);
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

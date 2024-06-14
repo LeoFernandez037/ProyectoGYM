@@ -1,42 +1,45 @@
-import React from 'react'
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from '../components/Home';
-import Informacion from '../components/Informacion.jsx';
-import Ejercicio from '../components/Ejercicio.jsx';
-import Ejercicio2 from '../components/Ejercicio2.jsx';
-import Ejercicio3 from '../components/Ejercicio3.jsx';
-import SumPerso from '../components/SumPerso.jsx';
-import Notificacion from '../components/Notificacion.jsx';
+import Home from "../components/Home";
+import Informacion from "../components/Informacion";
+import Notificacion from "../components/Notificacion";
 import BottomNav from "../components/BottomNav.jsx";
 import "./Navegacion.css";
-import Historial from '../components/Historial.jsx';
-import Profile from '../components/Profile.jsx';
-import EditarPerfil from '../components/EditarPerfil.jsx';
-import MainChatBot from '../components/MainChatBot.jsx';
-import MusicPlayer from '../components/MusicPlayer.jsx';
+import Historial from "../components/Historial";
+import Profile from "../components/Profile.jsx";
+import EditarPerfil from "../components/EditarPerfil.jsx";
+import SobreGym from "../components/SobreGym.jsx";
+import Calendario from "../components/Calendario.jsx";
+import SocialPage from "../components/TarjetaSocial/SocialPage";
+import HomePage from "../components/ejercicios/HomePage";
+import ExercisePage from "../components/InfoTar/ExercisePage";
+import Descanso from "../components/Descanso.jsx";
+import Nutricion from "../components/Chatbot/Nutricion.jsx";
+
 function Navegacion() {
-    return (
-        <div className="navContainer">
-            <div className="compContainer">
-                <Routes>
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/informacion" element={<Informacion />} />
-                    <Route path="/ejercicio" element={<Ejercicio />} />
-                    <Route path="/ejercicio2" element={<Ejercicio2 />} />
-                    <Route path="/ejercicio3" element={<Ejercicio3 />} />
-                    <Route path="/historial" element={<Historial />} />
-                    <Route path="/notificacion" element={<Notificacion/>} />
-                    <Route path="/profile" element={<Profile/>} />
-                    <Route path="/ediprofile" element={<EditarPerfil/>} />
-                    <Route path="/sumperso" element={<SumPerso/>} />
-                    <Route path="/chat" element={<MainChatBot/>} />
-                    <Route path="/music" element={<MusicPlayer/>} />
-                    <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} /> 
-                </Routes>
-                <BottomNav />
-            </div>
-        </div>
-    )
+  return (
+    <div className="navContainer">
+      <div className="compContainer">
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/informacion" element={<Informacion />} />
+          <Route path="/historial" element={<Historial />} />
+          <Route path="/notificacion" element={<Notificacion />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/ediprofile" element={<EditarPerfil />} />
+          <Route path="/sobreG" element={<SobreGym />} />
+          <Route path="/calendario" element={<Calendario />} />
+          <Route path="/social" element={<SocialPage />} />
+          <Route path="/rutina" element={<HomePage />} />
+          <Route path="/ejercicio" element={<ExercisePage />} />
+          <Route path="/descanso" element={<Descanso />} />
+          <Route path="/nutricion" element={<Nutricion />} />
+          <Route path="/*" element={<p>Error 404 Recurso no encontrado</p>} />
+        </Routes>
+        <BottomNav />
+      </div>
+    </div>
+  );
 }
 
-export default Navegacion
+export default Navegacion;

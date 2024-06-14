@@ -1,0 +1,31 @@
+/* .contenedorOp {
+  position: relative;
+  width: 327px;
+  height: 76px;
+  border-radius: 12px;
+  background-color: rgba(44, 44, 46, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10xp;
+}
+
+.imagen {
+  position: absolute;
+  top: 6px;
+  left: -18px;
+}
+
+.nombreO {
+  position: absolute;
+  width: 155px;
+  height: 36px;
+  top: 3px;
+  left: 120px;
+}
+
+.boton{
+    position: absolute;
+    left: 270px;
+} */

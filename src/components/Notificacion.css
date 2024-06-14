@@ -4,12 +4,14 @@
 }
 
 .not-card {
+    margin-top: 20px;
     background: var(--Primary);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     width: 375px;
     height: 748px;
+    align-items: center;
 }
 
 h2 {
@@ -23,26 +25,35 @@ h2 {
     margin-bottom: 25px;
     border-radius: 50px;
     height: 35px;
+    width: 330px;
+    margin-top: 20px;
+    justify-content: space-around;
 }
 
-.tab {
+.tab {    
     background-color: transparent;
+    border: hidden;
     color: white;
     margin: 0px;
+    width: 110px;
     font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 16px;
 }
 
 .tab.active {
     background-color: var(--Verde);
-    color: #121212;
+    color:#121212;
     border-radius: 40px;
+    width: 110px;
 }
 
 .notifications-list {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    height: 600px;
 }
 
 .notification {
@@ -53,10 +64,11 @@ h2 {
     font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     font-style: normal;
+    width: 335px;
 }
 
 .notification .time {
-    font-size: 18px;
+    font-size: 12px;
     margin-top: 6px;
     color: var(--Verde);
 }
@@ -71,7 +83,7 @@ h2 {
 
 .tittleTime{
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
 }
 
 .notification p {
