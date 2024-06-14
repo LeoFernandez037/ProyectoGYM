@@ -6,6 +6,8 @@ import homeIcon from "../assets/Home.png";
 import statsIcon from "../assets/stads.png";
 import bellIcon from "../assets/bell.png";
 import usersIcon from "../assets/Vector.png";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 const BottomNav = () => {
   return (
@@ -26,7 +28,7 @@ const BottomNav = () => {
         <span className="notification-dot"></span>
       </div>
       <Link to="/profile">
-        <img src={Imagen99} alt="Profile" className="profile" />
+        <img src={cookies.get("imagen")} alt="Profile" className="profile" />
       </Link>
     </div>
   );

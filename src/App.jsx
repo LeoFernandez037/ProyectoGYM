@@ -14,7 +14,7 @@ function App() {
         <div className="componentsContainer">
           <BrowserRouter>
             <Routes>
-              <Route path="/ProyectoGYM" element={<Login />} />
+              <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/*" element={<Navegacion />} />
             </Routes>

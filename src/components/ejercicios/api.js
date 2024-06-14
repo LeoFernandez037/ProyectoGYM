@@ -13,3 +13,11 @@ export const fetchNotis = async () => {
   const datanot = await resnotis.json();
   return datanot;
 };
+
+export const fetchUsers = async () => {
+  const resuser = await fetch(
+    "https://66684a7bf53957909ff76063.mockapi.io/noti/users"
+  );
+  const dataUser = await resuser.json();
+  return dataUser;
+};

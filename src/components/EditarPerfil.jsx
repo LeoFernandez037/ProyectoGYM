@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./EditarPerfil.css";
 import Imagen12 from "../assets/Foto.jpg";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 function EditarPerfil() {
-  const [nombre, setNombre] = useState("Gabriela Esprella");
-  const [email, setEmail] = useState("Gaby145@mail.com");
-  const [sexo, setSexo] = useState("Mujer");
-  const [fechaNacimiento, setFechaNacimiento] = useState("1998-04-24");
+  const [nombre, setNombre] = useState(cookies.get("nombre"));
+  const [email, setEmail] = useState(cookies.get("gmail"));
+  const [sexo, setSexo] = useState(cookies.get("sexo"));
+  const [fechaNacimiento, setFechaNacimiento] = useState(
+    cookies.get("fechanac")
+  );
 
   const handleSave = (event) => {
     event.preventDefault();
@@ -24,7 +28,11 @@ function EditarPerfil() {
           <h1 className="tituloPer"> Editar Perfil</h1>
         </div>
         <div className="profile-pic-container">
-          <img className="profile-pi" src={Imagen12} alt="Perfi_2" />
+          <img
+            className="profile-pi"
+            src={cookies.get("imagen")}
+            alt="Perfi_2"
+          />
           <button className="edit-pic-button">📷</button>
         </div>
         <form onSubmit={handleSave}>
@@ -36,7 +44,7 @@ function EditarPerfil() {
               onChange={(e) => setNombre(e.target.value)}
             />
           </div>
-          <line></line>
+          <div className="line"></div>
           <div className="form-group">
             <label>Email</label>
             <input
@@ -45,7 +53,7 @@ function EditarPerfil() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <line></line>
+          <div className="line"></div>
           <div className="form-group">
             <label>Sexo</label>
             <input
@@ -54,7 +62,7 @@ function EditarPerfil() {
               onChange={(e) => setSexo(e.target.value)}
             />
           </div>
-          <line></line>
+          <div className="line"></div>
           <div className="form-group">
             <label>Fecha de nacimiento</label>
             <input
