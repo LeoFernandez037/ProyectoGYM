@@ -3,6 +3,7 @@ import ExerciseTemplate from "./ExerciseTemplate";
 import { fetchExercises } from "./api";
 import "./HomePage.css";
 import ExerciseDetailPage from "./ExerciseDetailPage";
+
 const HomePage = () => {
   const [sections, setSections] = useState([]);
   const [selectedExercise, setSelectedExercise] = useState(null);
@@ -24,9 +25,11 @@ const HomePage = () => {
       setSections(formattedSections);
     });
   }, []);
+
   const handleCardClick = (exercise) => {
     setSelectedExercise(exercise);
   };
+
   const handleBack = () => {
     setSelectedExercise(null);
   };
@@ -42,7 +45,7 @@ const HomePage = () => {
         <h2>¡Elabora tu rutina personal y única!</h2>
       </div>
       <div className="ejercicio">EJERCICIOS</div>
-      <ExerciseTemplate sections={sections}  onCardClick={handleCardClick}/>
+      <ExerciseTemplate sections={sections} onCardClick={handleCardClick} />
     </div>
   );
 };
