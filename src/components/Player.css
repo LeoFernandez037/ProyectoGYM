@@ -1,0 +1,20 @@
+/* Player.css */
+
+.player {
+    margin-top: 0px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-weight: 800;
+    font-family: "Rajdhani", sans-serif;
+  }
+  
+  .player audio {
+    width: 100%;
+  }
+.botones5{
+  font-weight: 800;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+}
+  

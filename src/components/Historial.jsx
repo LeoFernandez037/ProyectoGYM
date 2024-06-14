@@ -19,7 +19,7 @@ function Historial() {
           <div>
             <h2>Ejercicio de gluteos</h2>
           </div>
-          <Link to="/descanso">
+          <Link to="/ejercicio">
             <span className="arrow">➡</span>
           </Link>
         </div>

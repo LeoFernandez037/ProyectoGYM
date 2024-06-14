@@ -2,7 +2,6 @@
     width: 375px;
     height: 812px;
     background-color: var(--Primary);
-
     position: relative;
 }
 
@@ -10,7 +9,6 @@
     width: 375px;
     height: 748px;
     background-color: var(--Primary);
-    
     padding-bottom: 60px;
 }
 

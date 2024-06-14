@@ -1,0 +1,46 @@
+.playlist-container {
+  max-width: 600px; /* Ejemplo: Limitar el ancho máximo del contenedor */
+  margin: auto; /* Centrar el contenedor */
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-weight: 800;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.playlist-navigation {
+  margin-bottom: 10px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  max-height: 100px; /* Límite de altura */
+  overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+}
+
+.playlist ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Comportamiento similar a flex-wrap */
+}
+
+.playlist li {
+  margin-bottom: 10px;
+  flex-basis: 50%; /* Dos columnas */
+  box-sizing: border-box; /* Ajustar el tamaño del borde */
+}
+
+.song-title {
+  margin-right: 10px;
+}
+
+.file-label {
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}

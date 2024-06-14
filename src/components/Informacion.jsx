@@ -26,6 +26,9 @@ function Informacion() {
             </Link>
             <h2>Rutinas personalizadas para ti</h2>
           </div>
+          <Link to="/music">
+            <button className="inf-button">Reproductor de Musica</button>
+          </Link>
         </div>
       </div>
     </div>

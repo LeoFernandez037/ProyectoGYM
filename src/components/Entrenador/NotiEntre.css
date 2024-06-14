@@ -1,9 +1,10 @@
-.notifications {
-    color: white;
+.notifi {
+    color: var(--Blanco);
     display: flex;
+    font-family: "Rajdhani", sans-serif;
 }
 
-.not-card {
+.noti-card {
     margin-top: 20px;
     background: var(--Primary);
     border-radius: 8px;
@@ -12,14 +13,15 @@
     width: 375px;
     height: 748px;
     align-items: center;
+    position: relative; 
 }
 
-h2 {
+h1.noti-bold {
     text-align: center;
     font-size: 35px;
 }
 
-.tabs {
+.tabas {
     background-color: var(--PlomoOscuro);
     display: flex;
     margin-bottom: 25px;
@@ -30,10 +32,10 @@ h2 {
     justify-content: space-around;
 }
 
-.tab {    
+.taba {    
     background-color: transparent;
     border: hidden;
-    color: white;
+    color: var(--Blanco);
     margin: 0px;
     width: 110px;
     font-family: "Rajdhani", sans-serif;
@@ -42,21 +44,19 @@ h2 {
     font-size: 16px;
 }
 
-.tab.active {
+.taba.active {
     background-color: var(--Verde);
-    color:#121212;
+    color: var(--Negro);
     border-radius: 40px;
     width: 110px;
 }
 
-.notifications-list {
+.noti-list {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    height: 600px;
 }
 
-.notification {
+.noti {
     background-color: var(--PlomoOscuro);
     padding: 15px;
     border-radius: 15px;
@@ -64,16 +64,16 @@ h2 {
     font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     font-style: normal;
-    width: 320px;
+    width: 335px;
 }
 
-.notification .time {
+.noti .timeNoti {
     font-size: 12px;
     margin-top: 6px;
     color: var(--Verde);
 }
 
-.notification h3 {
+.noti h3 {
     margin: 5px;
     font-size: 20px;
     font-family: "Rajdhani", sans-serif;
@@ -81,17 +81,30 @@ h2 {
     font-style: normal;
 }
 
-.tittleTime{
+.tittleNoti {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.notification p {
+.noti p {
     margin-top: 5px;
     font-size: 14px;
     color: #ccc;
 }
 
-.time{
-    background-color: transparent !important;
+.add-button {
+    background-color: var(--Verde);
+    color: var(--Negro);
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 36px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }

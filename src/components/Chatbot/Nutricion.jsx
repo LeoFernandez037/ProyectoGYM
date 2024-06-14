@@ -9,7 +9,6 @@ import Cookies from "universal-cookie";
 const cookies = new Cookies();
 
 const apiKey = import.meta.env.VITE_API_KEY;
-
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const safetySettings = [
