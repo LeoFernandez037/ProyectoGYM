@@ -1,7 +1,6 @@
 .container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Para que comience desde arriba */
+  align-items: center; /* alinear ak centro*/
   background-color: var(--Primary, #1c1c1e);
   width: 375px; /* Mantener el ancho del contenedor */
   height: 812px;
@@ -93,7 +92,7 @@
   gap: 16px;
   margin: 10px; /* Ajustado el margen para asegurar que no se salga */
   border-radius: 16px;
-  width: calc(100% - 20px); /* Ajuste del ancho para evitar desbordamiento */
+  width: calc(100% - 35px); /* Ajuste del ancho para evitar desbordamiento */
 }
 
 .activity-img {
