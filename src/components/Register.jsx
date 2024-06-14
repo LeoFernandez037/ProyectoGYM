@@ -4,31 +4,58 @@ import "./Register.css";
 import Imagen1 from "../assets/Logo1.png";
 
 function Register() {
-  const handleSubmitLog = async (e) => {
+  const handleSubmitLog = (e) => {
     e.preventDefault();
-    let _datos = {
-      nombre: "Novat@",
-      imagen:
-        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/242.jpg",
-      gmail: e.target.email.value,
-      contrasena: e.target.password.value,
-      rol: "cliente",
-      sexo: "Establecer",
-      estado: "activo",
-      desde: "",
-      hasta: "",
-      rutinas: "",
-      fechanac: "",
+    // const datos = {
+    //   nombre: "Novat@",
+    //   imagen:
+    //     "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/242.jpg",
+    //   gmail: e.target.email.value,
+    //   contrasena: e.target.password.value,
+    //   rol: "cliente",
+    //   sexo: "Establecer",
+    //   estado: "activo",
+    //   desde: "",
+    //   hasta: "",
+    //   rutinas: "",
+    //   fechanac: "",
+    // };
+    // console.log(datos);
+
+    // fetch("https://66684a7bf53957909ff76063.mockapi.io/noti/users/", {
+    //   method: "POST",
+    //   headers: { "Content-type": "application/json;" },
+    //   body: JSON.stringify(datos),
+    // })
+    //   .then((response) => response.json())
+    //   .then((json) => {
+    //     console.log(json);
+    //   })
+    //   .catch((err) => console.log(err));
+
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    let emailst = email.toString();
+    let passwordst = password.toString();
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "User-Agent": "insomnia/9.2.0",
+      },
+      body:
+        '{"nombre":"Novat@","imagen":"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/400.jpg","gmail":' +
+        emailst +
+        '"contrasena":' +
+        passwordst +
+        ',"rol":"cliente","sexo":"por definir","estado":"activo","desde":"consulta","hasta":"en caja","rutinas":"","fechanac":"","fecha-nac":""}',
     };
 
-    fetch("https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/users", {
-      method: "POST",
-      body: JSON.stringify(_datos),
-      headers: { "Content-type": "application/json;" },
-    })
+    fetch("https://66684a7bf53957909ff76063.mockapi.io/noti/users/", options)
       .then((response) => response.json())
-      .then((json) => console.log(json))
-      .catch((err) => console.log(err));
+      .then((response) => console.log(response))
+      .catch((err) => console.error(err));
   };
 
   return (
