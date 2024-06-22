@@ -1,10 +1,10 @@
-import React from 'react';
-import UserCard from './UserCard';
+import React from "react";
+import UserCard from "./UserCard";
 
 const UserList = ({ users }) => (
   <div className="user-list">
-    {users.map(user => (
-      <UserCard key={user.id} nombreS={user.nombreS} imagenS={user.imagenS} />
+    {users.map((user) => (
+      <UserCard key={user.id} nombreS={user.nombre} imagenS={user.imagen} />
     ))}
   </div>
 );

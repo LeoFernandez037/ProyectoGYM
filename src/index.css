@@ -79,16 +79,6 @@ h2{
 
 }
 
-.exercise-card {
-  background-color: var(--Primary);
-  color: var(--Blanco);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .exercise-page1 {
   background-color: var(--Primary);
   padding: 20px;

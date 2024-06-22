@@ -1,13 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import UserList from './UseList';
-
+import React, { useEffect, useState } from "react";
+import UserList from "./UseList";
+import { fetchUsers } from "../ejercicios/api";
 const SocialPage = () => {
   const [users, setUsers] = useState([]);
 
+  // useEffect(() => {
+  //   fetch('https://6661452a63e6a0189fe91108.mockapi.io/api/Gym/social')
+  //     .then(response => response.json())
+  //     .then(data => setUsers(data));
+  // }, []);
+
   useEffect(() => {
-    fetch('https://6661452a63e6a0189fe91108.mockapi.io/api/Gym/social')
-      .then(response => response.json())
-      .then(data => setUsers(data));
+    fetchUsers().then((data) => {
+      setUsers(data);
+    });
   }, []);
 
   return (

@@ -6,21 +6,22 @@ import Imagen1 from "../assets/Logo1.png";
 function Register() {
   const handleSubmitLog = (e) => {
     e.preventDefault();
-    // const datos = {
-    //   nombre: "Novat@",
-    //   imagen:
-    //     "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/242.jpg",
-    //   gmail: e.target.email.value,
-    //   contrasena: e.target.password.value,
-    //   rol: "cliente",
-    //   sexo: "Establecer",
-    //   estado: "activo",
-    //   desde: "",
-    //   hasta: "",
-    //   rutinas: "",
-    //   fechanac: "",
-    // };
-    // console.log(datos);
+    const datos = {
+      nombre: "Novat@",
+      imagen:
+        "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/242.jpg",
+      gmail: e.target.email.value,
+      contrasena: e.target.password.value,
+      rol: "cliente",
+      sexo: "Establecer",
+      estado: "activo",
+      desde: "",
+      hasta: "",
+      rutinas: "",
+      fechanac: "",
+    };
+    console.log(datos);
+    console.log(JSON.stringify(datos));
 
     // fetch("https://66684a7bf53957909ff76063.mockapi.io/noti/users/", {
     //   method: "POST",
@@ -44,12 +45,7 @@ function Register() {
         "Content-Type": "application/json",
         "User-Agent": "insomnia/9.2.0",
       },
-      body:
-        '{"nombre":"Novat@","imagen":"https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/400.jpg","gmail":' +
-        emailst +
-        '"contrasena":' +
-        passwordst +
-        ',"rol":"cliente","sexo":"por definir","estado":"activo","desde":"consulta","hasta":"en caja","rutinas":"","fechanac":"","fecha-nac":""}',
+      body: JSON.stringify(datos),
     };
 
     fetch("https://66684a7bf53957909ff76063.mockapi.io/noti/users/", options)

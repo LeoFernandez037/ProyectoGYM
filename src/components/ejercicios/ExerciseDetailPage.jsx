@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Image from './Image';
-import Button from './Button1';
-import './ExerciseDetailPage.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Image from "./Image";
+import Button from "./Button1";
+import "./ExerciseDetailPage.css";
 
 const ExerciseDetailPage = ({ exercise, user, onBack }) => {
   const [quantity, setQuantity] = useState(1);
@@ -21,18 +21,18 @@ const ExerciseDetailPage = ({ exercise, user, onBack }) => {
       numeroE: quantity,
     };
 
-    fetch('https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/EjercicioG', {
-      method: 'POST',
+    fetch("https://6663ce1a932baf9032a90f5a.mockapi.io/api/User/EjercicioG", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(newExercise),
     })
-      .then(response => response.json())
-      .then(data => {
-        navigate('/personalized-routines', { state: { addedExercise: data } }); // Redirige y pasa el ejercicio agregado
+      .then((response) => response.json())
+      .then((data) => {
+        navigate("/personalized-routines", { state: { addedExercise: data } }); // Redirige y pasa el ejercicio agregado
       })
-      .catch(error => console.error('Error saving exercise:', error));
+      .catch((error) => console.error("Error saving exercise:", error));
   };
 
   return (
@@ -54,8 +54,12 @@ const ExerciseDetailPage = ({ exercise, user, onBack }) => {
           />
         </div>
         <div className="buttons">
-          <Button className="add-button" onClick={handleAdd}>Agregar</Button>
-          <Button className="back-button" onClick={onBack}>Volver</Button>
+          <Button className="back-button" onClick={handleAdd}>
+            Agregar
+          </Button>
+          <Button className="back-button" onClick={onBack}>
+            Volver
+          </Button>
         </div>
       </div>
     </div>
